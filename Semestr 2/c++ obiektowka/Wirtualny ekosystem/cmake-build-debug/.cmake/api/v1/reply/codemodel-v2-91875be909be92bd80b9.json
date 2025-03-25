@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Wirtualny_ekosystem",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Wirtualny_ekosystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Wirtualny_ekosystem-Debug-ee6629293c9fdf09cbc3.json",
+					"name" : "Wirtualny_ekosystem",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/STUDIA_POLLUB/Semestr 2/c++ obiektowka/Wirtualny ekosystem/cmake-build-debug",
+		"source" : "D:/STUDIA_POLLUB/Semestr 2/c++ obiektowka/Wirtualny ekosystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

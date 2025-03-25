@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.29)
+project(zad4 C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(zad4 main.c
+        tabliceDyn.h
+        tabliceDyn.c)

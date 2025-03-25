@@ -1,0 +1,3 @@
+D:/STUDIA_POLLUB/Semestr 2/c++ obiektowka/Wirtualny ekosystem/cmake-build-debug/CMakeFiles/Wirtualny_ekosystem.dir
+D:/STUDIA_POLLUB/Semestr 2/c++ obiektowka/Wirtualny ekosystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/STUDIA_POLLUB/Semestr 2/c++ obiektowka/Wirtualny ekosystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+Na karcie Wstawianie znajduj¹ siê galerie zawieraj¹ce elementy, które zosta³y zaprojektowane tak, aby pasowa³y do ogólnego wygl¹du dokumentu.  Z tych galerii mo¿na wstawiaæ tabele, nag³ówki, stopki, listy, strony tytu³owe i inne bloki konstrukcyjne dokumentu.  Tworzone obrazy, wykresy lub diagramy równie¿ s¹ dopasowywane do bie¿¹cego wygl¹du dokumentu. 
+
+Formatowanie zaznaczonego tekstu w treœci dokumentu mo¿na ³atwo zmieniæ, wybieraj¹c wygl¹d zaznaczonego tekstu z galerii szybkich stylów na karcie Narzêdzia g³ówne. Mo¿na tak¿e sformatowaæ tekst bezpoœrednio, u¿ywaj¹c innych formantów na karcie Narzêdzia g³ówne. Wiêkszoœæ formantów umo¿liwia zastosowanie wygl¹du z bie¿¹cego motywu lub bezpoœrednio okreœlonego formatu. 
+
+Aby zmieniæ ogólny wygl¹d dokumentu, wybierz nowe elementy motywu na karcie Uk³ad strony.
+ 
+ Do zmieniania wygl¹du elementów dostêpnych w galerii szybkich stylów s³u¿y polecenie Zmieñ bie¿¹cy zestaw szybkich stylów.  Galeria motywów i galeria szybkich stylów oferuj¹ polecenia resetowania, dziêki którym zawsze mo¿na przywróciæ oryginalny wygl¹d dokumentu okreœlony w bie¿¹cym szablonie. 
+
