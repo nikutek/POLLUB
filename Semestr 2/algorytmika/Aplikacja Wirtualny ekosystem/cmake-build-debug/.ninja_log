@@ -1,8 +1,0 @@
-# ninja log v6
-13	373	7645352848596985	build.ninja	87d9c11483acddc0
-42	160	7645335134931840	CMakeFiles/Aplikacja_Wirtualny_ekosystem.dir/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj	7de401b6c515e6a7
-5	849	7645351584855504	CMakeFiles/Aplikacja_Wirtualny_ekosystem.dir/main.cpp.obj	71f31087f56ee6a6
-45	684	7645335134961765	CMakeFiles/Aplikacja_Wirtualny_ekosystem.dir/inputReader.cpp.obj	89bf990c969c2f11
-10	923	7645351584905136	CMakeFiles/Aplikacja_Wirtualny_ekosystem.dir/InputReader.cpp.obj	2a020bd23a37ed83
-3	289	7645352848596985	build.ninja	87d9c11483acddc0
-24	678	7645352849464656	CMakeFiles/Aplikacja_Wirtualny_ekosystem.dir/main.cpp.obj	71f31087f56ee6a6
