@@ -26,6 +26,7 @@ void Ecosystem::printBoard() {
     }
 }
 
+//TODO: Naprawić case gdy jest przy ścianie ale nie w rogu
 vector<char> Ecosystem::getNeighbours(int x, int y) {
     if (x < 0 || x >= this->width || y < 0 || y >= this->height){
         cout << "Invalid Position" << endl;

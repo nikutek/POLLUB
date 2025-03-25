@@ -2,6 +2,8 @@
 // Created by user on 25-Mar-25.
 //
 
+//TODO: Naprawić konstruktor i header
+
 #ifndef FUNGI_H
 #define FUNGI_H
 
@@ -15,14 +17,13 @@ using namespace std;
 class Fungi : public Organism{
 public:
     Fungi() : Organism(){
-        this->symbol = "#";
+        cout << "Fungi " << config.fungi.maxAgeLowerLimit << config.fungi.maxAgeUpperLimit << endl;
+        this->symbol = '#';
         this->isAlive = true;
         this-> fullness = 0;
         this->eatLimit = 3;
-        this->age = 0;
+        this->age = rand()%(config.fungi.maxAgeUpperLimit - config.fungi.maxAgeLowerLimit) + config.fungi.maxAgeLowerLimit,
         this->maxAge = 5;
-        this->maxAgeLowerLimit = 5;
-        this->maxAgeUpperLimit = 5;
         this->costOfReproduction = 0;
     }
 
@@ -34,5 +35,5 @@ public:
         cout << "algae eating" << endl;
     }
 
-}
+};
 #endif

@@ -5,22 +5,23 @@
 #ifndef ORGANISM_H
 #define ORGANISM_H
 
-
+#include "../Config.h"
 
 class Organism {
 protected:
+  Config config;
   char symbol;
   bool isAlive;
   int fullness;
   int eatLimit;
   int age;
   int maxAge;
-  int maxAgeLowerLimit;
+    int maxAgeLowerLimit;
   int maxAgeUpperLimit;
   int costOfReproduction;
   public:
     Organism();
-    Organism(char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge, int maxAgeLowerLimit, int maxAgeUpperLimit,int costOfReproduction );
+    Organism(char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge,int maxAgeLowerLimit, int maxAgeUpperLimit,  int costOfReproduction );
     bool isHungry();
     virtual void reproduce();
     virtual void eat();

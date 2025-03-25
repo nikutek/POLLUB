@@ -15,10 +15,6 @@ InputReader::InputReader(string inputFileName, string outputFileName) {
     this->outputFileName = outputFileName;
 }
 
-#include <fstream>
-#include <sstream>
-#include <vector>
-
 vector<vector<char>> InputReader::readInput() {
     ifstream file(this->inputFileName);
     if (!file.is_open()) {

@@ -1,7 +1,3 @@
-//
-// Created by user on 25-Mar-25.
-//
-
 #ifndef ALGAE_H
 #define ALGAE_H
 
@@ -12,27 +8,25 @@
 
 using namespace std;
 
-class Algae : public Organism{
+class Algae : public Organism {
 public:
     Algae() : Organism(){
-        this->symbol = "*";
+        this->symbol = '#';
         this->isAlive = true;
         this-> fullness = 0;
         this->eatLimit = 3;
-        this->age = 0;
+        this->age = rand()%(config.algae.maxAgeUpperLimit - config.algae.maxAgeLowerLimit) + config.algae.maxAgeLowerLimit,
         this->maxAge = 5;
-        this->maxAgeLowerLimit = 5;
-        this->maxAgeUpperLimit = 5;
         this->costOfReproduction = 0;
     }
 
-    void reproduce() override{
-      cout << "algae reproduced" << endl;
-    };
-
-    void eat() override{
-      cout << "algae eating" << endl;
+    void reproduce() override {
+        cout << "Algae reproduced" << endl;
     }
 
-}
-#endif //ALGAE_H
+    void eat() override {
+        cout << "Algae eating" << endl;
+    }
+};
+
+#endif // ALGAE_H
