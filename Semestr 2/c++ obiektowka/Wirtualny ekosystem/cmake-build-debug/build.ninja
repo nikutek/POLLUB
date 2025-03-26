@@ -73,6 +73,12 @@ build CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Bacteria.cpp.obj: CXX_COMPILE
   OBJECT_DIR = CMakeFiles\Wirtualny_ekosystem.dir
   OBJECT_FILE_DIR = CMakeFiles\Wirtualny_ekosystem.dir\Organisms
 
+build CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Empty.cpp.obj: CXX_COMPILER__Wirtualny_ekosystem_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/c++$ obiektowka/Wirtualny$ ekosystem/Organisms/Empty.cpp || cmake_object_order_depends_target_Wirtualny_ekosystem
+  DEP_FILE = CMakeFiles\Wirtualny_ekosystem.dir\Organisms\Empty.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Wirtualny_ekosystem.dir
+  OBJECT_FILE_DIR = CMakeFiles\Wirtualny_ekosystem.dir\Organisms
+
 build CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj: CXX_COMPILER__Wirtualny_ekosystem_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/c++$ obiektowka/Wirtualny$ ekosystem/Organisms/Fungi.cpp || cmake_object_order_depends_target_Wirtualny_ekosystem
   DEP_FILE = CMakeFiles\Wirtualny_ekosystem.dir\Organisms\Fungi.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -99,7 +105,7 @@ build CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj: CXX_COMPILER__Wirtualny_e
 #############################################
 # Link the executable Wirtualny_ekosystem.exe
 
-build Wirtualny_ekosystem.exe: CXX_EXECUTABLE_LINKER__Wirtualny_ekosystem_Debug CMakeFiles/Wirtualny_ekosystem.dir/Ecosystem.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/InputReader.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Algae.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Bacteria.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Organism.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj
+build Wirtualny_ekosystem.exe: CXX_EXECUTABLE_LINKER__Wirtualny_ekosystem_Debug CMakeFiles/Wirtualny_ekosystem.dir/Ecosystem.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/InputReader.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Algae.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Bacteria.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Empty.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Organism.cpp.obj CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Wirtualny_ekosystem.dir

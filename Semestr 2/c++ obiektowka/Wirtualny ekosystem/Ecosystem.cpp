@@ -1,9 +1,9 @@
 #include "Ecosystem.h"
-
+#include "Organisms/Organism.h"
 #include <iostream>
 #include <ostream>
 
-Ecosystem::Ecosystem(vector<vector<char>> startingPosition) {
+Ecosystem::Ecosystem(vector<vector<Organism*>> startingPosition) {
     this->board = startingPosition;
     this->generation = 0;
     if (!startingPosition.empty()) {
@@ -18,21 +18,21 @@ Ecosystem::Ecosystem(vector<vector<char>> startingPosition) {
 
 void Ecosystem::printBoard() {
     cout << "Generation: " << generation << endl;
-    for (vector<char> row : this->board) {
-        for (char cell : row) {
-            cout << cell << ' ';
+    for (vector<Organism*> row : this->board) {
+        for (Organism* organism : row) {
+            cout << organism->getSymbol() << ' ';
         }
         cout << endl;
     }
 }
 
-vector<char> Ecosystem::getNeighbours(int x, int y) {
+vector<Organism*> Ecosystem::getNeighbours(int x, int y) {
     if (x < 0 || x >= this->width || y < 0 || y >= this->height) {
         cout << "Invalid Position (" << x << ", " << y << ")" << endl;
-        return vector<char>();
+        return vector<Organism*>();
     }
 
-    vector<char> neighbours;
+    vector<Organism*> neighbours;
 
     // Loop through all possible neighbor positions (-1,0,+1 offsets)
     for (int dx = -1; dx <= 1; dx++) {
@@ -44,7 +44,7 @@ vector<char> Ecosystem::getNeighbours(int x, int y) {
 
             // Check if the new position is inside the board boundaries
             if (newX >= 0 && newX < this->width && newY >= 0 && newY < this->height) {
-                neighbours.push_back(this->board[newY][newX]);
+                neighbours.push_back(this->board[newX][newY]);
             }
         }
     }

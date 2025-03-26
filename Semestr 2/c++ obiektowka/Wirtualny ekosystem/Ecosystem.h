@@ -4,19 +4,19 @@
 
 #ifndef GAMEBOARD_H
 #define GAMEBOARD_H
-#include <string>
+#include "Organisms/Organism.h"
 #include <vector>
 using namespace std;
 
 class Ecosystem {
 private:
-    vector<vector<char> > board;
+    vector<vector<Organism*> > board;
     int generation;
     int width;
     int height;
 
 public:
-    Ecosystem(vector<vector<char> > startingPosition);
+    Ecosystem(vector<vector<Organism*> > startingPosition);
 
     void printBoard();
 
@@ -24,7 +24,7 @@ public:
 
     int getHeight();
 
-    vector<char> getNeighbours(int x, int y);
+    vector<Organism*> getNeighbours(int x, int y);
 
     // ~GameBoard();
 };

@@ -39,6 +39,8 @@ public:
     int getAge();
 
     void show();
+
+    char getSymbol();
 };
 
 

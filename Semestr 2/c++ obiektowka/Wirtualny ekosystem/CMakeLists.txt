@@ -9,6 +9,7 @@ file(GLOB SOURCES
         "InputReader.cpp"
         "Ecosystem.cpp"
         "Organisms/*.cpp"
+
 )
 
 add_executable(Wirtualny_ekosystem ${SOURCES})

@@ -53,3 +53,8 @@ void Organism::show() {
     ss << "Reproduction Cost: " << costOfReproduction << "\n";
     cout << ss.str() << endl;
 }
+
+char Organism::getSymbol() {
+    return this->symbol;
+}
+

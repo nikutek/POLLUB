@@ -15,10 +15,10 @@ int main() {
     Ecosystem game_board(input_reader.readInput());
     game_board.printBoard();
 
-    vector<char> neighbours = game_board.getNeighbours(3, 3);
+    vector<Organism*> neighbours = game_board.getNeighbours(3, 3);
     cout << "Neighbors: ";
-    for (char n : neighbours) {
-        cout << n << " ";
+    for (Organism* n : neighbours) {
+        cout << n->getSymbol() << " ";
     }
     cout << endl;
 

@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include "Organisms/Organism.h"
 using namespace std;
 
 class InputReader{
@@ -18,7 +19,7 @@ class InputReader{
     public:
     InputReader(string inputFileName, string outputFileName);
 
-    vector<vector<char>> readInput();
+    vector<vector<Organism*>> readInput();
 
     string getInputFileName();
 
