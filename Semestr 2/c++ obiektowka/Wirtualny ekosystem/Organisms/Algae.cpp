@@ -1,32 +1,30 @@
-// #ifndef ALGAE_H
-// #define ALGAE_H
-//
-// #include <fstream>
-// #include <iostream>
-// #include <vector>
-// #include "Organism.h"
-//
-// using namespace std;
-//
-// class Algae : public Organism {
-// public:
-//     Algae() : Organism(){
-//         this->symbol = '#';
-//         this->isAlive = true;
-//         this-> fullness = 0;
-//         this->eatLimit = 3;
-//         this->age = rand()%(config.algae.maxAgeUpperLimit - config.algae.maxAgeLowerLimit) + config.algae.maxAgeLowerLimit,
-//         this->maxAge = 5;
-//         this->costOfReproduction = 0;
-//     }
-//
-//     void reproduce() override {
-//         cout << "Algae reproduced" << endl;
-//     }
-//
-//     void eat() override {
-//         cout << "Algae eating" << endl;
-//     }
-// };
-//
-// #endif // ALGAE_H
+#ifndef ALGAE_H
+#define ALGAE_H
+
+#include <iostream>
+#include "Algae.h"
+
+int algaeMaxAgeTop = 50;
+int algaeMaxAgeBottom = 10;
+int algaeCostOfReproduction = 5;
+
+using namespace std;
+
+Algae::Algae()
+    : Organism('*', true, 0, 10, 0,
+               rand() % (algaeMaxAgeTop - algaeMaxAgeBottom + 1) + algaeMaxAgeBottom, // Random maxAge
+               algaeMaxAgeBottom,
+               algaeMaxAgeTop,
+               algaeCostOfReproduction) {}
+
+void Algae::reproduce() {
+    cout << "Algae::reproduce()" << endl;
+}
+
+void Algae::eat() {
+    cout << "Algae::eat()" << endl;
+}
+
+
+
+#endif // ALGAE_H

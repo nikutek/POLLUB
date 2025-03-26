@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Ecosystem.h"
 #include "InputReader.h"
+#include "Organisms/Algae.h"
 #include "Organisms/Fungi.h"
 
 using namespace std;
@@ -24,6 +25,10 @@ int main() {
     Fungi grzyb;
     grzyb.show();
     grzyb.eat();
+
+    Algae glon;
+    glon.show();
+    glon.eat();
 
     return 0;
 }
