@@ -2,18 +2,23 @@
 
 #include <iostream>
 #include <ostream>
+#include <sstream>
 
+using namespace std;
 // Default constructor
 Organism::Organism()
     : symbol('?'), isAlive(true), fullness(0), eatLimit(5), age(0),
-      maxAge(100), maxAgeLowerLimit(50), maxAgeUpperLimit(150), costOfReproduction(10) {}
+      maxAge(100), maxAgeLowerLimit(50), maxAgeUpperLimit(150), costOfReproduction(10) {
+}
 
 // Parameterized constructor
 Organism::Organism(char symbol, bool isAlive, int fullness, int eatLimit, int age,
                    int maxAge, int maxAgeLowerLimit, int maxAgeUpperLimit, int costOfReproduction)
     : symbol(symbol), isAlive(isAlive), fullness(fullness), eatLimit(eatLimit),
       age(age), maxAge(maxAge), maxAgeLowerLimit(maxAgeLowerLimit),
-      maxAgeUpperLimit(maxAgeUpperLimit), costOfReproduction(costOfReproduction) {}
+      maxAgeUpperLimit(maxAgeUpperLimit), costOfReproduction(costOfReproduction) {
+}
+
 void Organism::reproduce() {
     std::cout << "Organism reproduced" << std::endl;
 }
@@ -23,19 +28,28 @@ void Organism::eat() {
 }
 
 
-
 bool Organism::isHungry() {
     return this->fullness < this->eatLimit;
 }
 
-bool Organism::getIsAlive(){
+bool Organism::getIsAlive() {
     return this->isAlive;
 }
 
-int Organism::getFullness(){
+int Organism::getFullness() {
     return this->fullness;
 }
 
-int Organism::getAge(){
+int Organism::getAge() {
     return this->age;
+}
+
+void Organism::show() {
+    stringstream ss;
+    ss << "Symbol: " << symbol << "\n";
+    ss << "Alive: " << (isAlive ? "Yes" : "No") << "\n";
+    ss << "Fullness: " << fullness << "/" << eatLimit << "\n";
+    ss << "Age: " << age << "/" << maxAge << "\n";
+    ss << "Reproduction Cost: " << costOfReproduction << "\n";
+    cout << ss.str() << endl;
 }

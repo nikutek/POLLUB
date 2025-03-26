@@ -1,10 +1,19 @@
 # ninja log v6
-7	961	7646367074061746	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
-8	605	7646365389779506	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Organism.cpp.obj	4b51ebc661f6cf57
-9	694	7646363932079991	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Algae.cpp.obj	2f8c90d901818947
-961	1119	7646367083600709	Wirtualny_ekosystem.exe	d64aa0676e91fec
+7	737	7646911611879447	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
+660	821	7646911768756479	Wirtualny_ekosystem.exe	d64aa0676e91fec
+6	83	7646909747553459	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Algae.cpp.obj	2f8c90d901818947
+19	1177	7646909273575383	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Organism.cpp.obj	4b51ebc661f6cf57
 3	467	7646367250692098	build.ninja	f3f2c367d53093a
 16	994	7646083086958982	CMakeFiles/Wirtualny_ekosystem.dir/InputReader.cpp.obj	690e4f9059cdf820
+22	1018	7646895231662332	CMakeFiles/Wirtualny_ekosystem.dir/Ecosystem.cpp.obj	b3d0935d3ee27411
 14	949	7645945999574731	CMakeFiles/Wirtualny_ekosystem.dir/GameBoard.cpp.obj	7239872293a021ae
-12	1364	7645981066678738	CMakeFiles/Wirtualny_ekosystem.dir/Ecosystem.cpp.obj	b3d0935d3ee27411
-7	610	7646365979187912	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj	6567a33977c6c9ca
+10	660	7646911762262521	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj	6567a33977c6c9ca
+11	715	7646911965608286	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj	6567a33977c6c9ca
+17	774	7646911965668123	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
+774	931	7646911973238295	Wirtualny_ekosystem.exe	d64aa0676e91fec
+10	1080	7646912956400143	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
+8	606	7646913608805028	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj	6567a33977c6c9ca
+13	740	7646913608844964	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
+6	638	7646913808065185	CMakeFiles/Wirtualny_ekosystem.dir/Organisms/Fungi.cpp.obj	6567a33977c6c9ca
+10	761	7646913808105080	CMakeFiles/Wirtualny_ekosystem.dir/main.cpp.obj	8e2388ae34d719a1
+761	920	7646913815625054	Wirtualny_ekosystem.exe	d64aa0676e91fec

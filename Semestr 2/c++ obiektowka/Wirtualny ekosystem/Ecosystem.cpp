@@ -26,34 +26,25 @@ void Ecosystem::printBoard() {
     }
 }
 
-//TODO: Naprawić case gdy jest przy ścianie ale nie w rogu
 vector<char> Ecosystem::getNeighbours(int x, int y) {
-    if (x < 0 || x >= this->width || y < 0 || y >= this->height){
-        cout << "Invalid Position" << endl;
+    if (x < 0 || x >= this->width || y < 0 || y >= this->height) {
+        cout << "Invalid Position (" << x << ", " << y << ")" << endl;
         return vector<char>();
     }
+
     vector<char> neighbours;
-    if (x==0 and y==0) { //top-left
-        neighbours.push_back(this->board[y][x+1]);
-        neighbours.push_back(this->board[y+1][x]);
-        neighbours.push_back(this->board[y+1][x+1]);
-    } else if (x==0 and y==this->height-1) { //left-bottom
-        neighbours.push_back(this->board[y][x+1]);
-        neighbours.push_back(this->board[y-1][x+1]);
-        neighbours.push_back(this->board[y-1][x]);
-    } else if (x == this->width - 1 && y == 0) { // top-right
-        neighbours.push_back(this->board[y+1][x]);
-        neighbours.push_back(this->board[y][x-1]);
-        neighbours.push_back(this->board[y+1][x-1]);
-    } else if (x==this->width-1 and y==this->height-1) {//right-bottom
-        neighbours.push_back(this->board[y][x-1]);
-        neighbours.push_back(this->board[y-1][x-1]);
-        neighbours.push_back(this->board[y-1][x]);
-    } else {
-        for (int xx=-1 ; xx<=1 ; xx++) {
-            for (int yy=-1 ; yy<=1; yy++) {
-                if (xx==0 and yy==0) continue;
-                neighbours.push_back(this->board[y+yy][x+xx]);
+
+    // Loop through all possible neighbor positions (-1,0,+1 offsets)
+    for (int dx = -1; dx <= 1; dx++) {
+        for (int dy = -1; dy <= 1; dy++) {
+            if (dx == 0 && dy == 0) continue; // Skip the cell itself
+
+            int newX = x + dx;
+            int newY = y + dy;
+
+            // Check if the new position is inside the board boundaries
+            if (newX >= 0 && newX < this->width && newY >= 0 && newY < this->height) {
+                neighbours.push_back(this->board[newY][newX]);
             }
         }
     }
