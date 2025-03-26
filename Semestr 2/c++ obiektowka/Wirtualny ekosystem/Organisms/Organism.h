@@ -19,6 +19,8 @@ protected:
     int costOfReproduction;
 
 public:
+    virtual ~Organism() = default;
+
     Organism();
 
     Organism(char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge, int maxAgeLowerLimit,

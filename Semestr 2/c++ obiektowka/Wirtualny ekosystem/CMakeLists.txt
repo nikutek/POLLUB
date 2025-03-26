@@ -8,7 +8,6 @@ file(GLOB SOURCES
         "main.cpp"
         "InputReader.cpp"
         "Ecosystem.cpp"
-        "Config.cpp"
         "Organisms/*.cpp"
 )
 

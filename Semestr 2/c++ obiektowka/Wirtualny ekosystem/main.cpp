@@ -3,6 +3,7 @@
 #include "InputReader.h"
 #include "Organisms/Algae.h"
 #include "Organisms/Fungi.h"
+#include "Organisms/Bacteria.h"
 
 using namespace std;
 
@@ -29,6 +30,10 @@ int main() {
     Algae glon;
     glon.show();
     glon.eat();
+
+    Bacteria bakteria;
+    bakteria.show();
+    bakteria.eat();
 
     return 0;
 }
