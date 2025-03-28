@@ -20,11 +20,15 @@ public:
 
     void printBoard();
 
+    vector<vector<Organism*> > getBoard();
+
     int getWidth();
 
     int getHeight();
 
     vector<Organism*> getNeighbours(int x, int y);
+
+    void moveOrganism(Organism* organism, int x, int y);
 
     // ~GameBoard();
 };
