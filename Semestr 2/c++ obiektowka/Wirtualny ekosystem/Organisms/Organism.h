@@ -4,10 +4,13 @@
 
 #ifndef ORGANISM_H
 #define ORGANISM_H
+#include <vector>
 
+using namespace std;
 
 class Organism {
 protected:
+    int x, y;
     char symbol;
     bool isAlive;
     int fullness;
@@ -23,7 +26,7 @@ public:
 
     Organism();
 
-    Organism(char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge, int maxAgeLowerLimit,
+    Organism(int x, int y, char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge, int maxAgeLowerLimit,
              int maxAgeUpperLimit, int costOfReproduction);
 
     bool isHungry();
@@ -43,6 +46,15 @@ public:
     void show();
 
     char getSymbol();
+
+    void setPosition(int x, int y); // New setter function
+
+    int getX();
+    int getY();
+
+    vector<Organism*> getNeighbours();
+
+    void move();
 };
 
 

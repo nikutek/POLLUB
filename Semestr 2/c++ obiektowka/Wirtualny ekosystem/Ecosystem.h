@@ -1,37 +1,36 @@
-//
-// Created by user on 24-Mar-25.
-//
+#ifndef ECOSYSTEM_H
+#define ECOSYSTEM_H
 
-#ifndef GAMEBOARD_H
-#define GAMEBOARD_H
 #include "Organisms/Organism.h"
 #include <vector>
+
 using namespace std;
 
 class Ecosystem {
 private:
-    vector<vector<Organism*> > board;
-    int generation;
-    int width;
-    int height;
+    static vector<vector<Organism*>> board;  // Shared across all instances
+    static int width;  // Shared width
+    static int height; // Shared height
+    int generation; // Still instance-specific
 
 public:
-    Ecosystem(vector<vector<Organism*> > startingPosition);
+    Ecosystem(vector<vector<Organism*>> startingPosition);
 
     void printBoard();
 
-    vector<vector<Organism*> > getBoard();
+    static vector<vector<Organism*>> getBoard(); // Now static
 
-    int getWidth();
+    static Organism* get(int x, int y);  // Static so it can access static board
 
-    int getHeight();
+    static void set(int x, int y, Organism* organism); // Static to modify static board
 
-    vector<Organism*> getNeighbours(int x, int y);
+    static int getWidth();  // Static getter
 
-    void moveOrganism(int x, int y);
+    static int getHeight(); // Static getter
 
-    // ~GameBoard();
+    static vector<Organism*> getNeighbours(int x, int y); // Static
+
+    static void moveOrganism(int x, int y);
 };
 
-
-#endif //GAMEBOARD_H
+#endif // ECOSYSTEM_H

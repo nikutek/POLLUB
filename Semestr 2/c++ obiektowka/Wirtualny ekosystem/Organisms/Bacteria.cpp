@@ -8,7 +8,7 @@ int bacteriaMaxAgeBottom = 10;
 int bacteriaCostOfReproduction = 5;
 
 Bacteria::Bacteria()
-    : Organism('@', true, 0, 10, 0, rand() % (bacteriaMaxAgeTop - bacteriaMaxAgeBottom + 1) + bacteriaMaxAgeBottom, bacteriaMaxAgeBottom, bacteriaMaxAgeTop, 5) {}
+    : Organism(0,0,'@', true, 0, 10, 0, rand() % (bacteriaMaxAgeTop - bacteriaMaxAgeBottom + 1) + bacteriaMaxAgeBottom, bacteriaMaxAgeBottom, bacteriaMaxAgeTop, 5) {}
 
 void Bacteria::reproduce(){
   cout << "Bacteria reproducing" << endl;

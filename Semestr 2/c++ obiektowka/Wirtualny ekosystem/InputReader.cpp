@@ -26,35 +26,44 @@ vector<vector<Organism*>> InputReader::readInput() {
         exit(EXIT_FAILURE);
     }
 
-    if (file.fail()) {
-        cout << "Błąd podczas wczytywania pliku!" << endl;
-        exit(EXIT_FAILURE);
-    }
-
     vector<vector<Organism*>> result;
     string line;
+    int y = 0; // Track row position
 
     while (getline(file, line)) {
         vector<Organism*> row;
+        int x = 0; // Track column position
+
         for (char c : line) {
             if (c == ' ') continue; // Ignore spaces
 
+            Organism* org = nullptr;
             switch (c) {
-                case '#': row.push_back(new Fungi()); break;
-                case '*': row.push_back(new Algae()); break;
-                case '@': row.push_back(new Bacteria()); break;
-                default:  row.push_back(new Empty()); break;
+                case '#': org = new Fungi(); break;
+                case '*': org = new Algae(); break;
+                case '@': org = new Bacteria(); break;
+                default:  org = new Empty(); break;
             }
+
+            if (org) {
+                org->setPosition(x, y); // Assign position
+                row.push_back(org);
+            }
+
+            x++; // Move to next column
         }
 
         if (!row.empty()) {
             result.push_back(row);
         }
+
+        y++; // Move to next row
     }
 
     file.close();
     return result;
 }
+
 
 
 

@@ -4,6 +4,7 @@
 #include "Organisms/Algae.h"
 #include "Organisms/Fungi.h"
 #include "Organisms/Bacteria.h"
+#include "Organisms/Empty.h"
 
 using namespace std;
 
@@ -15,25 +16,45 @@ int main() {
     Ecosystem game_board(input_reader.readInput());
     game_board.printBoard();
 
-    vector<Organism*> neighbours = game_board.getNeighbours(3, 3);
-    cout << "Neighbors: ";
-    for (Organism* n : neighbours) {
-        cout << n->getSymbol() << " ";
-    }
     cout << endl;
 
     // Pass config to Fungi
-    Fungi grzyb;
-    grzyb.show();
-    grzyb.eat();
 
-    Algae glon;
-    glon.show();
-    glon.eat();
 
-    Bacteria bakteria;
-    bakteria.show();
-    bakteria.eat();
+
+    // game_board.moveOrganism(9, 1);
+    // game_board.printBoard();
+
+
+    // game_board.get(11,3)->show();  //eating sandbox
+    // for (int i = 0; i < 10; i++) {
+    //     if (game_board.get(10,3)->ageGrow()) {
+    //     }
+    //
+    // }
+
+    game_board.printBoard();
+
+    for (vector<Organism*> row : game_board.getBoard()) {
+        for (Organism* org : row) {
+            if (org->getSymbol()=='#') {
+                cout <<"grzyb:"<<endl;
+                org->move();
+            }
+        }
+    }
+    game_board.printBoard();
+
+
+
+
+    // Algae glon;
+    // glon.show();
+    // glon.eat();
+    //
+    // Bacteria bakteria;
+    // bakteria.show();
+    // bakteria.eat();
 
     return 0;
 }
