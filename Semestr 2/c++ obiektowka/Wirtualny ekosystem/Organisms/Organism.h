@@ -54,6 +54,8 @@ public:
 
     vector<Organism*> getNeighbours();
 
+    Organism* getRandomNeighbourOfType(char symbol);
+
     void move();
 };
 

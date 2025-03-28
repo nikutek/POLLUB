@@ -104,6 +104,8 @@ void Ecosystem::moveOrganism(int x, int y) {
     int newX = emptyCells[randIndex].first;
     int newY = emptyCells[randIndex].second;
 
+    current->setPosition(newX, newY);
+
     swap(board[y][x], board[newY][newX]);
 }
 

@@ -37,10 +37,7 @@ void Fungi::eat() {
      }
 
     if (hasDeadNeighbour) {
-        Organism* randomisedNeighbour = neighbours.at(rand() % neighbours.size());
-        while (randomisedNeighbour->getSymbol()!='+') {
-            randomisedNeighbour = neighbours.at(rand() % neighbours.size());
-        }
+        Organism* randomisedNeighbour = getRandomNeighbourOfType('+');
 
         Ecosystem::set(randomisedNeighbour->getX(), randomisedNeighbour->getY(), new Empty);
         this->fullness++;

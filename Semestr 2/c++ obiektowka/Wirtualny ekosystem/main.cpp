@@ -35,15 +35,27 @@ int main() {
 
     game_board.printBoard();
 
-    for (vector<Organism*> row : game_board.getBoard()) {
-        for (Organism* org : row) {
-            if (org->getSymbol()=='#') {
-                cout <<"grzyb:"<<endl;
-                org->move();
+    for (int i = 0; i < 15; i++) {
+        vector<Organism*> bacteriaList;
+
+        // Collect all bacteria first (before modifying the board)
+        for (vector<Organism*> row : Ecosystem::getBoard()) {
+            for (Organism* org : row) {
+                if (org->getSymbol() == '@') {
+                    bacteriaList.push_back(org);
+                }
             }
         }
+
+        // Now process movement and eating
+        for (Organism* bacterium : bacteriaList) {
+            bacterium->move();
+            bacterium->eat();
+        }
+
+        game_board.printBoard();
     }
-    game_board.printBoard();
+
 
 
 

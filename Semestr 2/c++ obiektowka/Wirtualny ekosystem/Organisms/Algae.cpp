@@ -22,7 +22,7 @@ void Algae::reproduce() {
 }
 
 void Algae::eat() {
-    cout << "Algae::eat()" << endl;
+    this->fullness++;
 }
 
 

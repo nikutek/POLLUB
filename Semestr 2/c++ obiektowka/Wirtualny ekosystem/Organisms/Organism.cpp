@@ -81,8 +81,25 @@ vector<Organism *> Organism::getNeighbours() {
     return Ecosystem::getNeighbours(x, y);
 }
 
+Organism *Organism::getRandomNeighbourOfType(char symbol) {
+    vector<Organism *> neighbours = getNeighbours();
+    bool contains = false;
+    for (Organism* neighbour : neighbours) {
+        if (neighbour->getSymbol() == symbol) contains = true;
+    }
+    if (!contains) return nullptr;
+
+    Organism* randomisedNeighbour = neighbours.at(rand() % neighbours.size());
+    while (randomisedNeighbour->getSymbol()!=symbol) {
+        randomisedNeighbour = neighbours.at(rand() % neighbours.size());
+    }
+    return randomisedNeighbour;
+}
+
+
 void Organism::move() {
-    Ecosystem::moveOrganism(this->x, this->y);
+    Ecosystem::moveOrganism(x, y);
+
 }
 
 
