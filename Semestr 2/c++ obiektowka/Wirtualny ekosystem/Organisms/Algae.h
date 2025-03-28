@@ -9,7 +9,6 @@ class Algae : public Organism {
   public:
     Algae();
 
-    void reproduce() override;
     void eat() override;
 };
 

@@ -11,7 +11,7 @@ class Bacteria : public Organism{
   public:
     Bacteria();
 
-    void reproduce() override;
+
 
     void eat() override;
 

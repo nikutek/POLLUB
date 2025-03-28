@@ -17,9 +17,7 @@ Algae::Algae()
                algaeMaxAgeTop,
                algaeCostOfReproduction) {}
 
-void Algae::reproduce() {
-    cout << "Algae::reproduce()" << endl;
-}
+
 
 void Algae::eat() {
     this->fullness++;

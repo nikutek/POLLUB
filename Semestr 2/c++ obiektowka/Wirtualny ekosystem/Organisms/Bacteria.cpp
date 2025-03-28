@@ -16,9 +16,7 @@ Bacteria::Bacteria()
                bacteriaMaxAgeTop, 5) {
 }
 
-void Bacteria::reproduce() {
-    cout << "Bacteria reproducing" << endl;
-}
+
 
 void Bacteria::eat() {
     //     Bakteria natomiast poluje. W pierwszej kolejności

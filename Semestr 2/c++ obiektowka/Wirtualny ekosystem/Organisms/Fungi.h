@@ -8,7 +8,6 @@ class Fungi : public Organism {
 public:
     Fungi();
 
-    void reproduce() override;
 
     void eat() override;
 };

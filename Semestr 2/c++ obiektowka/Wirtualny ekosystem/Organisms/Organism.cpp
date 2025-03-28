@@ -4,6 +4,9 @@
 #include <ostream>
 #include <sstream>
 
+#include "Algae.h"
+#include "Bacteria.h"
+#include "Fungi.h"
 #include "../Ecosystem.h"
 
 using namespace std;
@@ -22,7 +25,21 @@ Organism::Organism(int x, int y, char symbol, bool isAlive, int fullness, int ea
 }
 
 void Organism::reproduce() {
-    std::cout << "Organism reproduced" << std::endl;
+    cout << "Organism reproduced" << endl;
+    this->fullness = 10;
+    if (!this->isAlive) return;
+    if (this->fullness > this->costOfReproduction) {
+        Organism* randomisedCell = getRandomNeighbourOfType('_');
+        this->fullness -= this->costOfReproduction;
+        switch (this->getSymbol()) {
+            case '*':
+                Ecosystem::set(randomisedCell->getX(), getY(), new Algae); break;
+            case '#':
+                Ecosystem::set(randomisedCell->getX(), getY(), new Fungi); break;
+            case '@':
+                Ecosystem::set(randomisedCell->getX(), getY(), new Bacteria); break;
+        }
+    }
 }
 
 void Organism::eat() {

@@ -35,38 +35,39 @@ int main() {
 
     game_board.printBoard();
 
-    for (int i = 0; i < 15; i++) {
-        vector<Organism*> bacteriaList;
+    // for (int i = 0; i < 15; i++) {
+    //     vector<Organism*> bacteriaList;
+    //
+    //     // Collect all bacteria first (before modifying the board)
+    //     for (vector<Organism*> row : Ecosystem::getBoard()) {
+    //         for (Organism* org : row) {
+    //             if (org->getSymbol() == '@') {
+    //                 bacteriaList.push_back(org);
+    //             }
+    //         }
+    //     }
+    //
+    //     // Now process movement and eating
+    //     for (Organism* bacterium : bacteriaList) {
+    //         bacterium->move();
+    //         bacterium->eat();
+    //     }
+    //
+    //     game_board.printBoard();
+    // }
 
-        // Collect all bacteria first (before modifying the board)
-        for (vector<Organism*> row : Ecosystem::getBoard()) {
-            for (Organism* org : row) {
-                if (org->getSymbol() == '@') {
-                    bacteriaList.push_back(org);
-                }
+
+
+
+
+    for (vector<Organism*> row : Ecosystem::getBoard()) {
+        for (Organism* org : row) {
+            if (org->getSymbol() == '@') {
+                org->reproduce();
             }
         }
-
-        // Now process movement and eating
-        for (Organism* bacterium : bacteriaList) {
-            bacterium->move();
-            bacterium->eat();
-        }
-
-        game_board.printBoard();
     }
-
-
-
-
-
-    // Algae glon;
-    // glon.show();
-    // glon.eat();
-    //
-    // Bacteria bakteria;
-    // bakteria.show();
-    // bakteria.eat();
+    game_board.printBoard();
 
     return 0;
 }

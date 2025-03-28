@@ -19,10 +19,7 @@ Fungi::Fungi()
                fungiMaxAgeTop,
                fungiCostOfReproduction) {}
 
-// Function Implementations
-void Fungi::reproduce() {
-    std::cout << "Fungi cpp reproduced" << std::endl;
-}
+
 
 void Fungi::eat() {
 //     Grzyb szuka w swoim sąsiedztwie
