@@ -32,6 +32,8 @@ public:
 
     virtual void eat();
 
+    bool ageGrow();
+
     bool getIsAlive();
 
     int getFullness();

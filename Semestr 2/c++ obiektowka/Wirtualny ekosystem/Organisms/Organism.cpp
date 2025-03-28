@@ -27,6 +27,11 @@ void Organism::eat() {
     std::cout << "Organism eat" << std::endl;
 }
 
+bool Organism::ageGrow() {
+    this->age++;
+    return this->age > maxAge;
+}
+
 
 bool Organism::isHungry() {
     return this->fullness < this->eatLimit;
