@@ -25,22 +25,42 @@ Organism::Organism(int x, int y, char symbol, bool isAlive, int fullness, int ea
 }
 
 void Organism::reproduce() {
-    cout << "Organism reproduced" << endl;
-    this->fullness = 10;
     if (!this->isAlive) return;
+
     if (this->fullness > this->costOfReproduction) {
-        Organism* randomisedCell = getRandomNeighbourOfType('_');
+        Organism *randomisedCell = getRandomNeighbourOfType('_');
+
+        // Ensure there's an empty space before proceeding
+        if (!randomisedCell) return; // No available space, do nothing
+
         this->fullness -= this->costOfReproduction;
+
+        Organism *newOrganism = nullptr;
+
         switch (this->getSymbol()) {
             case '*':
-                Ecosystem::set(randomisedCell->getX(), getY(), new Algae); break;
+                newOrganism = new Algae();
+                newOrganism->setPosition(randomisedCell->getX(), randomisedCell->getY());
+                break;
             case '#':
-                Ecosystem::set(randomisedCell->getX(), getY(), new Fungi); break;
+                newOrganism = new Fungi();
+                newOrganism->setPosition(randomisedCell->getX(), randomisedCell->getY());
+                break;
             case '@':
-                Ecosystem::set(randomisedCell->getX(), getY(), new Bacteria); break;
+                newOrganism = new Bacteria();
+                newOrganism->setPosition(randomisedCell->getX(), randomisedCell->getY());
+                break;
+        }
+
+        if (newOrganism) {
+            newOrganism->setPosition(randomisedCell->getX(), randomisedCell->getY());
+            Ecosystem::set(randomisedCell->getX(), randomisedCell->getY(), newOrganism);
+            cout << this->getSymbol()<<"(" <<x <<","<<y<<")" << " reproduced at "
+                    << randomisedCell->getX() << "," << randomisedCell->getY() << endl;
         }
     }
 }
+
 
 void Organism::eat() {
     std::cout << "Organism eat" << std::endl;
@@ -101,13 +121,13 @@ vector<Organism *> Organism::getNeighbours() {
 Organism *Organism::getRandomNeighbourOfType(char symbol) {
     vector<Organism *> neighbours = getNeighbours();
     bool contains = false;
-    for (Organism* neighbour : neighbours) {
+    for (Organism *neighbour: neighbours) {
         if (neighbour->getSymbol() == symbol) contains = true;
     }
     if (!contains) return nullptr;
 
-    Organism* randomisedNeighbour = neighbours.at(rand() % neighbours.size());
-    while (randomisedNeighbour->getSymbol()!=symbol) {
+    Organism *randomisedNeighbour = neighbours.at(rand() % neighbours.size());
+    while (randomisedNeighbour->getSymbol() != symbol) {
         randomisedNeighbour = neighbours.at(rand() % neighbours.size());
     }
     return randomisedNeighbour;
@@ -116,7 +136,4 @@ Organism *Organism::getRandomNeighbourOfType(char symbol) {
 
 void Organism::move() {
     Ecosystem::moveOrganism(x, y);
-
 }
-
-

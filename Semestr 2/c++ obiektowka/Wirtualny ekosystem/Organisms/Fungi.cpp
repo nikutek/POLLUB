@@ -29,7 +29,6 @@ void Fungi::eat() {
     vector<Organism*> neighbours = getNeighbours();
     bool hasDeadNeighbour=false;
      for (Organism* neighbour : neighbours) {
-         cout << neighbour->getSymbol();
          if (neighbour->getSymbol() == '+') hasDeadNeighbour = true;
      }
 

@@ -14,9 +14,18 @@ int main() {
     input_reader.readInput();
 
     Ecosystem game_board(input_reader.readInput());
-    game_board.printBoard();
 
     cout << endl;
+
+    for (int i=0; i<200; i++) {
+        cout << i << endl;
+        if (i==10) {
+            continue;
+        }
+            ;
+        Ecosystem::simulateStep();
+    }
+
 
     // Pass config to Fungi
 
@@ -33,7 +42,6 @@ int main() {
     //
     // }
 
-    game_board.printBoard();
 
     // for (int i = 0; i < 15; i++) {
     //     vector<Organism*> bacteriaList;
@@ -60,14 +68,7 @@ int main() {
 
 
 
-    for (vector<Organism*> row : Ecosystem::getBoard()) {
-        for (Organism* org : row) {
-            if (org->getSymbol() == '@') {
-                org->reproduce();
-            }
-        }
-    }
-    game_board.printBoard();
+
 
     return 0;
 }

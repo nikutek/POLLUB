@@ -16,7 +16,9 @@ private:
 public:
     Ecosystem(vector<vector<Organism*>> startingPosition);
 
-    void printBoard();
+    static void simulateStep();
+
+    static void printBoard();
 
     static vector<vector<Organism*>> getBoard(); // Now static
 

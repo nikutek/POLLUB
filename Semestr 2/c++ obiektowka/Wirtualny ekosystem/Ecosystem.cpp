@@ -6,15 +6,16 @@
 #include <vector>
 #include <cstdlib> // For rand()
 #include <ctime>   // For seeding random numbers
+#include <vector>
 
 using namespace std;
 
 // **Define static variables**
-vector<vector<Organism*>> Ecosystem::board;
+vector<vector<Organism *> > Ecosystem::board;
 int Ecosystem::width = 0;
 int Ecosystem::height = 0;
 
-Ecosystem::Ecosystem(vector<vector<Organism*>> startingPosition) {
+Ecosystem::Ecosystem(vector<vector<Organism *> > startingPosition) {
     // Initialize static board only once (when the first instance is created)
     if (board.empty()) {
         board = startingPosition;
@@ -31,30 +32,61 @@ Ecosystem::Ecosystem(vector<vector<Organism*>> startingPosition) {
     srand(time(0)); // Seed random generator
 }
 
+void Ecosystem::simulateStep() {
+    vector<Organism *> organisms;
+    for (vector<Organism *> row: board) {
+        for (Organism *org: row) {
+            if (org->getSymbol() != '_' && org->getSymbol() != '+') organisms.push_back(org);
+        }
+    }
+
+
+    for (Organism *organism: organisms) {
+        if (organism->getSymbol() != '*') {
+            int action = rand() % 2;
+            if (organism->getRandomNeighbourOfType('_')) {
+                // jesli ma gdzie sie ruszyc to losuje, w przeciwnym razie je
+                if (action == 1) {
+                    organism->move();
+                    continue;
+                }
+            }
+        }
+
+        organism->eat();
+        organism->reproduce();
+        organism->ageGrow();
+
+    }
+    printBoard();
+}
+
+
 void Ecosystem::printBoard() {
-    cout << "Generation: " << generation << endl;
-    for (vector<Organism*> row : board) { // Static variable
-        for (Organism* organism : row) {
+    cout << "---------------------------" << endl;
+    for (vector<Organism *> row: board) {
+        // Static variable
+        for (Organism *organism: row) {
             cout << organism->getSymbol() << ' ';
         }
         cout << endl;
     }
 }
 
-vector<vector<Organism*>> Ecosystem::getBoard() {
+vector<vector<Organism *> > Ecosystem::getBoard() {
     return board;
 }
 
-Organism* Ecosystem::get(int x, int y) {
+Organism *Ecosystem::get(int x, int y) {
     return board[y][x];
 }
 
-void Ecosystem::set(int x, int y, Organism* organism) {
+void Ecosystem::set(int x, int y, Organism *organism) {
     board[y][x] = organism;
 }
 
-vector<Organism*> Ecosystem::getNeighbours(int x, int y) {
-    vector<Organism*> neighbours;
+vector<Organism *> Ecosystem::getNeighbours(int x, int y) {
+    vector<Organism *> neighbours;
     if (x < 0 || x >= width || y < 0 || y >= height) {
         cout << "Invalid Position (" << x << ", " << y << ")" << endl;
         return neighbours;
@@ -77,11 +109,11 @@ vector<Organism*> Ecosystem::getNeighbours(int x, int y) {
 }
 
 void Ecosystem::moveOrganism(int x, int y) {
-    Organism* current = board[y][x];
+    Organism *current = board[y][x];
 
     if (!current) return;
 
-    vector<pair<int, int>> emptyCells;
+    vector<pair<int, int> > emptyCells;
 
     for (int dx = -1; dx <= 1; dx++) {
         for (int dy = -1; dy <= 1; dy++) {

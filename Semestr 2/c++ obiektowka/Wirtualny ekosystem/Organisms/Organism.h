@@ -22,6 +22,8 @@ protected:
     int costOfReproduction;
 
 public:
+
+
     virtual ~Organism() = default;
 
     Organism();
@@ -57,6 +59,10 @@ public:
     Organism* getRandomNeighbourOfType(char symbol);
 
     void move();
+
+    int getCostOfReproduction() const {
+        return costOfReproduction;
+    }
 };
 
 
