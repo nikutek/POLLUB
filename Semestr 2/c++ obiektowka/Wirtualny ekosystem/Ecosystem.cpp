@@ -64,7 +64,7 @@ vector<Organism*> Ecosystem::getNeighbours(int x, int y) {
     return neighbours;
 }
 
-void Ecosystem::moveOrganism(Organism* organism, int x, int y) {
+void Ecosystem::moveOrganism(int x, int y) {
     vector<Organism*> neighbours = this->getNeighbours(x, y);
     int possiblesqaures =0;
     for (Organism* organism : neighbours) {

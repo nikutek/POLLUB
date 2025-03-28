@@ -28,7 +28,7 @@ public:
 
     vector<Organism*> getNeighbours(int x, int y);
 
-    void moveOrganism(Organism* organism, int x, int y);
+    void moveOrganism(int x, int y);
 
     // ~GameBoard();
 };
