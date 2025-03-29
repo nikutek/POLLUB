@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 # Include all source files
 file(GLOB SOURCES
         "main.cpp"
-        "InputReader.cpp"
+        "IO.cpp"
         "Ecosystem.cpp"
         "Organisms/*.cpp"
 

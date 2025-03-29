@@ -102,7 +102,7 @@ void Organism::show() {
     cout << ss.str() << endl;
 }
 
-char Organism::getSymbol() {
+char Organism::getSymbol() const{
     return this->symbol;
 }
 

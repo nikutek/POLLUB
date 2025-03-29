@@ -47,7 +47,7 @@ public:
 
     void show();
 
-    char getSymbol();
+    char getSymbol() const;
 
     void setPosition(int x, int y); // New setter function
 

@@ -120,7 +120,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "InputReader.cpp",
+			"path" : "IO.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

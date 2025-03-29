@@ -8,16 +8,9 @@
 #include <vector>
 
 #include "Ecosystem.h"
+#include "IO.h"
 
 using namespace std;
-
-void clearConsole() {
-#ifdef _WIN32
-    system("cls");  // Windows command to clear the console
-#else
-    system("clear");  // Linux/macOS command to clear the console
-#endif
-}
 
 void UI::printBoard(vector<vector<Organism*>> board){
     for (vector<Organism *> row: board) {
@@ -30,15 +23,17 @@ void UI::printBoard(vector<vector<Organism*>> board){
   }
 
 void UI::start(int turns) {
-    for (int i=0; i<turns; i++) {
-        clearConsole();
+    for (int i=0; i<=turns; i++) {
+
 
         Ecosystem::simulateStep();
         cout << endl;
         UI::printBoard(Ecosystem::getBoard());
         cout << endl;
+        cout << "Turn: " << i << endl;
         UI::printStatistics(Ecosystem::getBoard());
         cout <<"----------------------------------------------------" << endl;
+        IO::writeOutput(Ecosystem::getBoard(), 200, "output.txt");
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
     }
 }
