@@ -18,8 +18,6 @@ public:
 
     static void simulateStep();
 
-    static void printBoard();
-
     static vector<vector<Organism*>> getBoard(); // Now static
 
     static Organism* get(int x, int y);  // Static so it can access static board

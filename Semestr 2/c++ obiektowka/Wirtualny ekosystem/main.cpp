@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Ecosystem.h"
 #include "InputReader.h"
+#include "UI.h"
 #include "Organisms/Algae.h"
 #include "Organisms/Fungi.h"
 #include "Organisms/Bacteria.h"
@@ -14,61 +15,9 @@ int main() {
     input_reader.readInput();
 
     Ecosystem game_board(input_reader.readInput());
+    UI ui;
 
-    cout << endl;
-
-    for (int i=0; i<200; i++) {
-        cout << i << endl;
-        if (i==10) {
-            continue;
-        }
-            ;
-        Ecosystem::simulateStep();
-    }
-
-
-    // Pass config to Fungi
-
-
-
-    // game_board.moveOrganism(9, 1);
-    // game_board.printBoard();
-
-
-    // game_board.get(11,3)->show();  //eating sandbox
-    // for (int i = 0; i < 10; i++) {
-    //     if (game_board.get(10,3)->ageGrow()) {
-    //     }
-    //
-    // }
-
-
-    // for (int i = 0; i < 15; i++) {
-    //     vector<Organism*> bacteriaList;
-    //
-    //     // Collect all bacteria first (before modifying the board)
-    //     for (vector<Organism*> row : Ecosystem::getBoard()) {
-    //         for (Organism* org : row) {
-    //             if (org->getSymbol() == '@') {
-    //                 bacteriaList.push_back(org);
-    //             }
-    //         }
-    //     }
-    //
-    //     // Now process movement and eating
-    //     for (Organism* bacterium : bacteriaList) {
-    //         bacterium->move();
-    //         bacterium->eat();
-    //     }
-    //
-    //     game_board.printBoard();
-    // }
-
-
-
-
-
-
+    ui.start(200);
 
     return 0;
 }

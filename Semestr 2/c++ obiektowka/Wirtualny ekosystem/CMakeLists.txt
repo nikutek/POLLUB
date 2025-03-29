@@ -12,4 +12,5 @@ file(GLOB SOURCES
 
 )
 
-add_executable(Wirtualny_ekosystem ${SOURCES})
+add_executable(Wirtualny_ekosystem ${SOURCES}
+        UI.cpp)

@@ -40,7 +40,6 @@ void Ecosystem::simulateStep() {
         }
     }
 
-
     for (Organism *organism: organisms) {
         if (organism->getSymbol() != '*') {
             int action = rand() % 2;
@@ -56,22 +55,11 @@ void Ecosystem::simulateStep() {
         organism->eat();
         organism->reproduce();
         organism->ageGrow();
-
-    }
-    printBoard();
-}
-
-
-void Ecosystem::printBoard() {
-    cout << "---------------------------" << endl;
-    for (vector<Organism *> row: board) {
-        // Static variable
-        for (Organism *organism: row) {
-            cout << organism->getSymbol() << ' ';
-        }
-        cout << endl;
     }
 }
+
+
+
 
 vector<vector<Organism *> > Ecosystem::getBoard() {
     return board;
