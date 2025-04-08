@@ -6,11 +6,8 @@
 #include "Organism.h"
 
 class Algae : public Organism {
-  public:
+public:
     Algae();
 
     void eat() override;
 };
-
-
-

@@ -17,18 +17,17 @@ Bacteria::Bacteria()
 }
 
 
-
 void Bacteria::eat() {
     //     Bakteria natomiast poluje. W pierwszej kolejności
     // szuka w swoim sąsiedztwie glonów i jeżeli takie są wybiera losowo jednego. Jeżeli nie ma
     // glonów to szuka innej bakterii. Organizm upolowany jest wchłonięty i znika z ekosystemu
-    Organism* randomisedAlgae = getRandomNeighbourOfType('*');
+    Organism *randomisedAlgae = getRandomNeighbourOfType('*');
     if (randomisedAlgae) {
         cout << "Bacteria eating algae" << endl;
         this->fullness++;
         Ecosystem::set(randomisedAlgae->getX(), randomisedAlgae->getY(), new Empty);
     } else {
-        Organism* randomisedBacteria = getRandomNeighbourOfType('@');
+        Organism *randomisedBacteria = getRandomNeighbourOfType('@');
         if (randomisedBacteria) {
             cout << "Bacteria eating other bacteria" << endl;
             this->fullness++;

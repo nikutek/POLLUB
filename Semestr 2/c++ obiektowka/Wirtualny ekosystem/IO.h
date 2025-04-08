@@ -8,8 +8,9 @@ using namespace std;
 
 class IO {
 public:
-    static vector<vector<Organism*>> readInput(const string& inputFileName);
-    static void writeOutput(const vector<vector<Organism*>>& board, int turn, const string& outputFileName);
+    static vector<vector<Organism *> > readInput(const string &inputFileName);
+
+    static void writeOutput(const vector<vector<Organism *> > &board, int turn, const string &outputFileName);
 };
 
 #endif //INPUTREADER_H

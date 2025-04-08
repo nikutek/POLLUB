@@ -8,45 +8,49 @@
 #include "Organisms/Empty.h"
 #include "Organisms/Fungi.h"
 
-vector<vector<Organism*>> IO::readInput(const string& inputFileName) {
+vector<vector<Organism *> > IO::readInput(const string &inputFileName) {
     ifstream file(inputFileName);
     if (!file.is_open()) {
         cout << "Nie udało się otworzyć pliku " << inputFileName << endl;
         exit(EXIT_FAILURE);
     }
 
-    vector<vector<Organism*>> result;
+    vector<vector<Organism *> > result;
     string line;
-    int y = 0; // Track row position
+    int y = 0;
 
     while (getline(file, line)) {
-        vector<Organism*> row;
-        int x = 0; // Track column position
+        vector<Organism *> row;
+        int x = 0;
 
-        for (char c : line) {
-            if (c == ' ') continue; // Ignore spaces
+        for (char c: line) {
+            if (c == ' ') continue;
 
-            Organism* org = nullptr;
+            Organism *org = nullptr;
             switch (c) {
-                case '#': org = new Fungi(); break;
-                case '*': org = new Algae(); break;
-                case '@': org = new Bacteria(); break;
-                default:  org = new Empty(); break;
+                case '#': org = new Fungi();
+                    break;
+                case '*': org = new Algae();
+                    break;
+                case '@': org = new Bacteria();
+                    break;
+                default: org = new Empty();
+                    break;
             }
 
             if (org) {
-                org->setPosition(x, y); // Assign position
+                org->setPosition(x, y);
                 row.push_back(org);
             }
 
-            x++; // Move to next column
+            x++;
         }
 
         if (!row.empty()) {
             result.push_back(row);
         }
 
-        y++; // Move to next row
+        y++;
     }
 
     file.close();
@@ -54,15 +58,20 @@ vector<vector<Organism*>> IO::readInput(const string& inputFileName) {
 }
 
 void IO::writeOutput(const vector<vector<Organism*>>& board, int turn, const string& outputFileName) {
-    ofstream file(outputFileName, ios::app); // Open in append mode to keep previous turns
+    ofstream file;
+    if (turn == 0) {
+        file.open(outputFileName, ios::trunc);
+    } else {
+        file.open(outputFileName, ios::app);
+    }
 
     if (!file.is_open()) {
         cout << "Failed to open file: " << outputFileName << endl;
         exit(EXIT_FAILURE);
     }
 
+    file << "Turn: " << turn << '\n';
 
-    // Print the board to file
     for (const vector<Organism*>& row : board) {
         for (const Organism* organism : row) {
             file << organism->getSymbol() << ' ';
@@ -70,9 +79,6 @@ void IO::writeOutput(const vector<vector<Organism*>>& board, int turn, const str
         file << '\n';
     }
 
-    file << "\nTurn: " << turn << '\n';
-
-    // Count organism types
     int numberOfAlgae = 0;
     int numberOfBacteria = 0;
     int numberOfFungi = 0;
@@ -89,13 +95,12 @@ void IO::writeOutput(const vector<vector<Organism*>>& board, int turn, const str
         }
     }
 
-    // Write statistics
     file << "Number of Algae: " << numberOfAlgae << '\n';
     file << "Number of Bacteria: " << numberOfBacteria << '\n';
     file << "Number of Fungi: " << numberOfFungi << '\n';
     file << "Number of Dead organisms: " << numberOfDead << '\n';
-
     file << "----------------------------------------------------\n\n";
 
     file.close();
 }
+

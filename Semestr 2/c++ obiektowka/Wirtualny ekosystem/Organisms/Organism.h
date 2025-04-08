@@ -22,13 +22,12 @@ protected:
     int costOfReproduction;
 
 public:
-
-
     virtual ~Organism() = default;
 
     Organism();
 
-    Organism(int x, int y, char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge, int maxAgeLowerLimit,
+    Organism(int x, int y, char symbol, bool isAlive, int fullness, int eatLimit, int age, int maxAge,
+             int maxAgeLowerLimit,
              int maxAgeUpperLimit, int costOfReproduction);
 
     bool isHungry();
@@ -49,14 +48,15 @@ public:
 
     char getSymbol() const;
 
-    void setPosition(int x, int y); // New setter function
+    void setPosition(int x, int y);
 
     int getX();
+
     int getY();
 
-    vector<Organism*> getNeighbours();
+    vector<Organism *> getNeighbours();
 
-    Organism* getRandomNeighbourOfType(char symbol);
+    Organism *getRandomNeighbourOfType(char symbol);
 
     void move();
 

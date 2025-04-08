@@ -10,13 +10,11 @@
 
 using namespace std;
 
-// **Define static variables**
 vector<vector<Organism *> > Ecosystem::board;
 int Ecosystem::width = 0;
 int Ecosystem::height = 0;
 
 Ecosystem::Ecosystem(vector<vector<Organism *> > startingPosition) {
-    // Initialize static board only once (when the first instance is created)
     if (board.empty()) {
         board = startingPosition;
         if (!startingPosition.empty()) {
@@ -29,7 +27,7 @@ Ecosystem::Ecosystem(vector<vector<Organism *> > startingPosition) {
     }
     this->generation = 0;
 
-    srand(time(0)); // Seed random generator
+    srand(time(0));
 }
 
 void Ecosystem::simulateStep() {
@@ -57,8 +55,6 @@ void Ecosystem::simulateStep() {
         organism->ageGrow();
     }
 }
-
-
 
 
 vector<vector<Organism *> > Ecosystem::getBoard() {

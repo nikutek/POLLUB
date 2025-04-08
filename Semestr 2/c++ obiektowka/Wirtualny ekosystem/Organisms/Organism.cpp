@@ -10,13 +10,12 @@
 #include "../Ecosystem.h"
 
 using namespace std;
-// Default constructor
+
 Organism::Organism()
     : x(0), y(0), symbol('?'), isAlive(true), fullness(0), eatLimit(5), age(0),
       maxAge(100), maxAgeLowerLimit(50), maxAgeUpperLimit(150), costOfReproduction(10) {
 }
 
-// Parameterized constructor
 Organism::Organism(int x, int y, char symbol, bool isAlive, int fullness, int eatLimit, int age,
                    int maxAge, int maxAgeLowerLimit, int maxAgeUpperLimit, int costOfReproduction)
     : x(x), y(y), symbol(symbol), isAlive(isAlive), fullness(fullness), eatLimit(eatLimit),
@@ -30,8 +29,7 @@ void Organism::reproduce() {
     if (this->fullness > this->costOfReproduction) {
         Organism *randomisedCell = getRandomNeighbourOfType('_');
 
-        // Ensure there's an empty space before proceeding
-        if (!randomisedCell) return; // No available space, do nothing
+        if (!randomisedCell) return;
 
         this->fullness -= this->costOfReproduction;
 
@@ -55,7 +53,7 @@ void Organism::reproduce() {
         if (newOrganism) {
             newOrganism->setPosition(randomisedCell->getX(), randomisedCell->getY());
             Ecosystem::set(randomisedCell->getX(), randomisedCell->getY(), newOrganism);
-            cout << this->getSymbol()<<"(" <<x <<","<<y<<")" << " reproduced at "
+            cout << this->getSymbol() << "(" << x << "," << y << ")" << " reproduced at "
                     << randomisedCell->getX() << "," << randomisedCell->getY() << endl;
         }
     }
@@ -102,7 +100,7 @@ void Organism::show() {
     cout << ss.str() << endl;
 }
 
-char Organism::getSymbol() const{
+char Organism::getSymbol() const {
     return this->symbol;
 }
 

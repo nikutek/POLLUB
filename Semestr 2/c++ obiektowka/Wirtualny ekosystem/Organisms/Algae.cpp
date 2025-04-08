@@ -11,18 +11,17 @@ int algaeCostOfReproduction = 5;
 using namespace std;
 
 Algae::Algae()
-    : Organism(0,0,'*', true, 0, 10, 0,
-               rand() % (algaeMaxAgeTop - algaeMaxAgeBottom + 1) + algaeMaxAgeBottom, // Random maxAge
+    : Organism(0, 0, '*', true, 0, 10, 0,
+               rand() % (algaeMaxAgeTop - algaeMaxAgeBottom + 1) + algaeMaxAgeBottom,
                algaeMaxAgeBottom,
                algaeMaxAgeTop,
-               algaeCostOfReproduction) {}
-
+               algaeCostOfReproduction) {
+}
 
 
 void Algae::eat() {
     this->fullness++;
 }
-
 
 
 #endif // ALGAE_H

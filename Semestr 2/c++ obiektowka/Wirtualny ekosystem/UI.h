@@ -12,11 +12,12 @@
 
 class UI {
 public:
-  static void start(int turns);
-  static void printBoard(vector<vector<Organism*>> board);
-  static void printStatistics(vector<vector<Organism*>> board);
-};
+    static void start(int turns);
 
+    static void printBoard(vector<vector<Organism *> > board);
+
+    static void printStatistics(vector<vector<Organism *> > board);
+};
 
 
 #endif //UI_H

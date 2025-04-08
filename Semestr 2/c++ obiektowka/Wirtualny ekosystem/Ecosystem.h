@@ -8,27 +8,27 @@ using namespace std;
 
 class Ecosystem {
 private:
-    static vector<vector<Organism*>> board;  // Shared across all instances
-    static int width;  // Shared width
-    static int height; // Shared height
-    int generation; // Still instance-specific
+    static vector<vector<Organism *> > board;
+    static int width;
+    static int height;
+    int generation;
 
 public:
-    Ecosystem(vector<vector<Organism*>> startingPosition);
+    Ecosystem(vector<vector<Organism *> > startingPosition);
 
     static void simulateStep();
 
-    static vector<vector<Organism*>> getBoard(); // Now static
+    static vector<vector<Organism *> > getBoard();
 
-    static Organism* get(int x, int y);  // Static so it can access static board
+    static Organism *get(int x, int y);
 
-    static void set(int x, int y, Organism* organism); // Static to modify static board
+    static void set(int x, int y, Organism *organism);
 
-    static int getWidth();  // Static getter
+    static int getWidth();
 
-    static int getHeight(); // Static getter
+    static int getHeight();
 
-    static vector<Organism*> getNeighbours(int x, int y); // Static
+    static vector<Organism *> getNeighbours(int x, int y);
 
     static void moveOrganism(int x, int y);
 };
