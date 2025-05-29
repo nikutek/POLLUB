@@ -61,6 +61,18 @@ build CMakeFiles/lab_5.dir/Napis.cpp.obj: CXX_COMPILER__lab_5_unscanned_Debug D$
   OBJECT_DIR = CMakeFiles\lab_5.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_5.dir
 
+build CMakeFiles/lab_5.dir/Animal.cpp.obj: CXX_COMPILER__lab_5_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/c++$ obiektowka/lab$ 5/Animal.cpp || cmake_object_order_depends_target_lab_5
+  DEP_FILE = CMakeFiles\lab_5.dir\Animal.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_5.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_5.dir
+
+build CMakeFiles/lab_5.dir/Dog.cpp.obj: CXX_COMPILER__lab_5_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/c++$ obiektowka/lab$ 5/Dog.cpp || cmake_object_order_depends_target_lab_5
+  DEP_FILE = CMakeFiles\lab_5.dir\Dog.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_5.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_5.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab_5
@@ -69,7 +81,7 @@ build CMakeFiles/lab_5.dir/Napis.cpp.obj: CXX_COMPILER__lab_5_unscanned_Debug D$
 #############################################
 # Link the executable lab_5.exe
 
-build lab_5.exe: CXX_EXECUTABLE_LINKER__lab_5_Debug CMakeFiles/lab_5.dir/main.cpp.obj CMakeFiles/lab_5.dir/Napis.cpp.obj
+build lab_5.exe: CXX_EXECUTABLE_LINKER__lab_5_Debug CMakeFiles/lab_5.dir/main.cpp.obj CMakeFiles/lab_5.dir/Napis.cpp.obj CMakeFiles/lab_5.dir/Animal.cpp.obj CMakeFiles/lab_5.dir/Dog.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_5.dir

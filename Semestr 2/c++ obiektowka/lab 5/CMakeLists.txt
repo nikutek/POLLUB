@@ -3,4 +3,4 @@ project(lab_5)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(lab_5 main.cpp Napis.cpp)
+add_executable(lab_5 main.cpp Napis.cpp Animal.cpp Dog.cpp)
