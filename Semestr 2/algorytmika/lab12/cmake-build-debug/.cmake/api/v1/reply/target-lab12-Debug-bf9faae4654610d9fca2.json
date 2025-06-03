@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lista.exe"
+			"path" : "lab12.exe"
 		},
 		{
-			"path" : "Lista.pdb"
+			"path" : "lab12.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,12 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "Lista::@6890427a1f51a3e7e1df",
+	"id" : "lab12::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lista",
-	"nameOnDisk" : "Lista.exe",
+	"name" : "lab12",
+	"nameOnDisk" : "lab12.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,19 +89,12 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ListaJednokierunkowa.cpp",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
