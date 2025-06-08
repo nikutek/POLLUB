@@ -61,6 +61,12 @@ build CMakeFiles/Lista.dir/ListaDwukierunkowa.cpp.obj: CXX_COMPILER__Lista_unsca
   OBJECT_DIR = CMakeFiles\Lista.dir
   OBJECT_FILE_DIR = CMakeFiles\Lista.dir
 
+build CMakeFiles/Lista.dir/ListaCykliczna.cpp.obj: CXX_COMPILER__Lista_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/algorytmika/Kolokwium$ II/List/ListaCykliczna.cpp || cmake_object_order_depends_target_Lista
+  DEP_FILE = CMakeFiles\Lista.dir\ListaCykliczna.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lista.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lista.dir
+
 build CMakeFiles/Lista.dir/main.cpp.obj: CXX_COMPILER__Lista_unscanned_Debug D$:/STUDIA_POLLUB/Semestr$ 2/algorytmika/Kolokwium$ II/List/main.cpp || cmake_object_order_depends_target_Lista
   DEP_FILE = CMakeFiles\Lista.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -75,7 +81,7 @@ build CMakeFiles/Lista.dir/main.cpp.obj: CXX_COMPILER__Lista_unscanned_Debug D$:
 #############################################
 # Link the executable Lista.exe
 
-build Lista.exe: CXX_EXECUTABLE_LINKER__Lista_Debug CMakeFiles/Lista.dir/ListaJednokierunkowa.cpp.obj CMakeFiles/Lista.dir/ListaDwukierunkowa.cpp.obj CMakeFiles/Lista.dir/main.cpp.obj
+build Lista.exe: CXX_EXECUTABLE_LINKER__Lista_Debug CMakeFiles/Lista.dir/ListaJednokierunkowa.cpp.obj CMakeFiles/Lista.dir/ListaDwukierunkowa.cpp.obj CMakeFiles/Lista.dir/ListaCykliczna.cpp.obj CMakeFiles/Lista.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lista.dir

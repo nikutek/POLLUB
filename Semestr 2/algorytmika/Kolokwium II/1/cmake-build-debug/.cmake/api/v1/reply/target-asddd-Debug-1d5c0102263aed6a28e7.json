@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lista.exe"
+			"path" : "asddd.exe"
 		},
 		{
-			"path" : "Lista.pdb"
+			"path" : "asddd.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,13 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2
+				0
 			]
 		}
 	],
-	"id" : "Lista::@6890427a1f51a3e7e1df",
+	"id" : "asddd::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -78,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lista",
-	"nameOnDisk" : "Lista.exe",
+	"name" : "asddd",
+	"nameOnDisk" : "asddd.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,26 +89,12 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2
+				0
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ListaJednokierunkowa.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ListaDwukierunkowa.cpp",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
