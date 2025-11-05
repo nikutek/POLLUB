@@ -4,17 +4,17 @@
 using namespace std;
 
 vector<double> newton(vector<double> xi, vector<double> fi) {
-    int n=fi.size();
+    int n = fi.size();
     vector<double> ir(fi);
 
-    for (int i=0; i<n;i++) {
+    for (int i = 0; i <= n; i++) {
         ir.push_back(fi[i]);
     }
 
-    for (int k=1; k<n; k++) {
-        int i=n;
-        for (int i=n-1; i>=k; i--) {
-            ir[i] = (ir[i] - ir[i-1]) / (xi[i] - xi[i-k]);
+    for (int k = 1; k < n; k++) {
+        int i = n;
+        for (int i = n - 1; i >= k; i--) {
+            ir[i] = (ir[i] - ir[i - 1]) / (xi[i] - xi[i - k]);
             i--;
         }
         k++;
@@ -27,44 +27,33 @@ void policzWPunkcie(vector<double> ir, double p, int n, vector<double> xi) {
     double iloczyn = 1.0;
 
     for (int i = 1; i < n; i++) {
-        iloczyn *= (p - xi[i-1]);
+        iloczyn *= (p - xi[i - 1]);
         wynik += ir[i] * iloczyn;
     }
 
     cout << "Przyblizona wartosc funkcji w punkcie p = " << p << " wynosi: " << wynik << endl;
-
 }
 
-void wypiszWspolczynniki(vector<double> ir, vector<double> xi) {
-    int n = ir.size();
-
-    cout << "W(x) = " << ir[0];
-    for (int i = 1; i < n; i++) {
-        cout << " + (" << ir[i] << ")";
-        for (int j = 0; j < i; j++) {
-            cout << " * (x - " << xi[j] << ")";
-        }
-    }
-    cout << endl;
-}
 
 int main() {
-    int n;
+    int n, iloscWezlow;
     cout << "Podaj liczbe wezlow: ";
-    cin >> n;
+    cin >> iloscWezlow;
+    n = iloscWezlow - 1;
 
-    vector<double> xi(n);
-    vector<double> fi(n);
 
-    for (int i = 0; i < n; i++) {
-        cout << "Wezel " << i+1 << " | Podaj x: ";
+    vector<double> xi(iloscWezlow);
+    vector<double> fi(iloscWezlow);
+
+    for (int i = 0; i < iloscWezlow; i++) {
+        cout << "Wezel " << i + 1 << " | Podaj x: ";
         cin >> xi[i];
-        cout << "Wezel " << i+1 << " | Podaj f(x): ";
+        cout << "Wezel " << i + 1 << " | Podaj f(x): ";
         cin >> fi[i];
     }
 
-    for (int i = 1; i < n; i++) {
-        if (xi[i] <= xi[i-1]) {
+    for (int i = 1; i < iloscWezlow; i++) {
+        if (xi[i] <= xi[i - 1]) {
             cout << "Wezly musza byc rosnace i rozne!" << endl;
             return 1;
         }
@@ -82,7 +71,6 @@ int main() {
     vector<double> ir = newton(xi, fi);
 
     policzWPunkcie(ir, p, n, xi);
-    wypiszWspolczynniki(ir, xi);
 
     return 0;
 }
