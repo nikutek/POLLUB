@@ -1,0 +1,5 @@
+Insert into ORDERSTATUS (ORDERSTATUSKEY,ORDERSTATUSNAME) values ('1','Approved ');
+Insert into ORDERSTATUS (ORDERSTATUSKEY,ORDERSTATUSNAME) values ('2','In progress');
+Insert into ORDERSTATUS (ORDERSTATUSKEY,ORDERSTATUSNAME) values ('3','Ready to send');
+Insert into ORDERSTATUS (ORDERSTATUSKEY,ORDERSTATUSNAME) values ('4','Finished');
+Insert into ORDERSTATUS (ORDERSTATUSKEY,ORDERSTATUSNAME) values ('5','Canceled');
