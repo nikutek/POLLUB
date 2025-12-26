@@ -1,5 +1,6 @@
 #include <iostream>
 #include "DaneWejsciowe.h"
+#include "Gauss.h"
 
 using namespace std;
 
@@ -47,7 +48,26 @@ int main() {
         cout << "Niepoprawny zestaw. Sprobuj ponownie.\n";
     }
 
+    Macierz dane = daneWejsciowe.pobierz(metoda,zestaw);
 
+    switch (metoda) {
+        case 1:
+            gaussPodstawowy(dane);
+            return 0;
+        case 2:
+            cout << "Metoda 2";
+            return 0;
+        case 3:
+            cout << "Metoda 3";
+            return 0;
+        case 4:
+            cout << "Metoda 4";
+            return 0;
+
+
+
+
+    }
     daneWejsciowe.pokaz(metoda, zestaw);
 
 
