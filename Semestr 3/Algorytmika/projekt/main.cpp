@@ -56,6 +56,7 @@ int main() {
             return 0;
         case 2:
             cout << "Metoda 2";
+            gaussKolumnowy(dane);
             return 0;
         case 3:
             cout << "Metoda 3";

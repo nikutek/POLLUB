@@ -7,4 +7,6 @@ using Macierz = std::vector<std::vector<double>>;
 
 bool gaussPodstawowy(Macierz& macierz);
 
+bool gaussKolumnowy(Macierz& macierz);
+
 #endif
