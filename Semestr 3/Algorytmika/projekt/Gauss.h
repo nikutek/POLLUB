@@ -11,4 +11,6 @@ bool gaussKolumnowy(Macierz& macierz);
 
 bool gaussWierszowy(Macierz& macierz);
 
+bool gaussPelny(Macierz& macierz);
+
 #endif

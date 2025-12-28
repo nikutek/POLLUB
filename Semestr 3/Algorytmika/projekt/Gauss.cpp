@@ -212,3 +212,105 @@ bool gaussWierszowy(Macierz& macierz) {
 
     return true;
 }
+
+bool gaussPelny(Macierz& macierz) {
+    int n = macierz.size();
+
+    // permutacja kolumn (kolejność zmiennych)
+    vector<int> permutacja(n);
+    for (int i = 0; i < n; i++) {
+        permutacja[i] = i;
+    }
+
+    // ============================
+    // ELIMINACJA W PRZÓD
+    // ============================
+    for (int k = 0; k < n; k++) {
+
+        // Szukanie max elementu w podmacierzy od (k,k) do (n,n)
+        int wierszMax = k;
+        int kolumnaMax = k;
+        double maxWartosc = fabs(macierz[k][k]);
+
+        for (int i = k; i < n; i++) {
+            for (int j = k; j < n; j++) {
+                if (fabs(macierz[i][j]) > maxWartosc) {
+                    maxWartosc = fabs(macierz[i][j]);
+                    wierszMax = i;
+                    kolumnaMax = j;
+                }
+            }
+        }
+
+        // Sprawdzenie osobliwości
+        if (fabs(macierz[wierszMax][kolumnaMax]) < 1e-12) {
+            cout << "Blad: macierz osobliwa\n";
+            return false;
+        }
+
+        // Zamiana wierszy
+        if (wierszMax != k) {
+            swap(macierz[k], macierz[wierszMax]);
+            cout << "\nZamiana wierszy "
+                 << k << " <-> " << wierszMax << endl;
+            DaneWejsciowe::pokaz(macierz);
+        }
+
+        // Zamiana kolumn
+        if (kolumnaMax != k) {
+            for (int i = 0; i < n; i++) {
+                swap(macierz[i][k],
+                     macierz[i][kolumnaMax]);
+            }
+
+            swap(permutacja[k],
+                 permutacja[kolumnaMax]);
+
+            cout << "\nZamiana kolumn "
+                 << k << " <-> " << kolumnaMax << endl;
+            DaneWejsciowe::pokaz(macierz);
+        }
+
+        //Eliminacja
+        for (int i = k + 1; i < n; i++) {
+
+            double wspolczynnik = macierz[i][k] / macierz[k][k];
+
+            for (int j = k; j <= n; j++) {
+                macierz[i][j] -= wspolczynnik * macierz[k][j];
+            }
+
+            cout << "\nPo wyzerowaniu A[" << i
+                 << "][" << k << "]\n";
+            DaneWejsciowe::pokaz(macierz);
+        }
+    }
+
+    // PODSTAWIANIE WSTECZNE
+    vector<double> x(n);
+
+    for (int i = n - 1; i >= 0; i--) {
+        double prawaStrona = macierz[i][n];
+
+        for (int j = i + 1; j < n; j++) {
+            prawaStrona -= macierz[i][j] * x[j];
+        }
+
+        x[i] = prawaStrona / macierz[i][i];
+    }
+
+    // ODTWORZENIE KOLEJNOŚCI
+    vector<double> wynik(n);
+    for (int i = 0; i < n; i++) {
+        wynik[permutacja[i]] = x[i];
+    }
+
+    cout << "\nRozwiazanie ukladu:\n";
+    for (int i = 0; i < n; i++) {
+        cout << "x" << i + 1 << " = "
+             << wynik[i] << endl;
+    }
+
+    return true;
+}
+ 
