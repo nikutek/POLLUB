@@ -121,3 +121,94 @@ bool gaussKolumnowy(Macierz& macierz) {
 
     return true;
 }
+bool gaussWierszowy(Macierz& macierz) {
+    int n = macierz.size();
+
+    // wektor permutacji kolumn (kolejność zmiennych)
+    vector<int> permutacja(n);
+    for (int i = 0; i < n; i++) {
+        permutacja[i] = i;
+    }
+
+    // ELIMINACJA W PRZÓD
+    for (int wiersz = 0; wiersz < n; wiersz++) {
+
+        // 1. Szukanie max elementu w WIERSZU
+        int kolumnaMax = wiersz;
+        double maxWartosc = fabs(macierz[wiersz][wiersz]);
+
+        for (int j = wiersz + 1; j < n; j++) {
+            if (fabs(macierz[wiersz][j]) > maxWartosc) {
+                maxWartosc = fabs(macierz[wiersz][j]);
+                kolumnaMax = j;
+            }
+        }
+
+        // 2. Sprawdzenie osobliwości
+        if (fabs(macierz[wiersz][kolumnaMax]) < 1e-12) {
+            cout << "Blad: zerowy element w wierszu "
+                 << wiersz << endl;
+            return false;
+        }
+
+        // 3. Zamiana kolumn (jeśli trzeba)
+        if (kolumnaMax != wiersz) {
+
+            for (int i = 0; i < n; i++) {
+                swap(macierz[i][wiersz],
+                     macierz[i][kolumnaMax]);
+            }
+
+            swap(permutacja[wiersz],
+                 permutacja[kolumnaMax]);
+
+            cout << "\nZamiana kolumn "
+                 << wiersz << " <-> " << kolumnaMax << endl;
+            DaneWejsciowe::pokaz(macierz);
+        }
+
+        // 4. Eliminacja (jak zawsze)
+        for (int i = wiersz + 1; i < n; i++) {
+
+            double wspolczynnik =
+                macierz[i][wiersz] / macierz[wiersz][wiersz];
+
+            for (int j = wiersz; j <= n; j++) {
+                macierz[i][j] -=
+                    wspolczynnik * macierz[wiersz][j];
+            }
+
+            cout << "\nPo wyzerowaniu A[" << i
+                 << "][" << wiersz << "]\n";
+            DaneWejsciowe::pokaz(macierz);
+        }
+    }
+
+
+    // PODSTAWIANIE WSTECZNE
+    vector<double> x(n);
+    for (int i = n - 1; i >= 0; i--) {
+        double prawaStrona = macierz[i][n];
+
+        for (int j = i + 1; j < n; j++) {
+            prawaStrona -= macierz[i][j] * x[j];
+        }
+
+        x[i] = prawaStrona / macierz[i][i];
+    }
+
+    // UWZGLĘDNIENIE PERMUTACJI
+    vector<double> wynik(n);
+    for (int i = 0; i < n; i++) {
+        wynik[permutacja[i]] = x[i];
+    }
+
+
+    cout << "\nRozwiazanie ukladu:\n";
+    for (int i = 0; i < n; i++) {
+        cout << "x" << i + 1 << " = "
+             << wynik[i] << endl;
+    }
+
+    return true;
+}

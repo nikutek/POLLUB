@@ -5,7 +5,6 @@
 using namespace std;
 
 int main() {
-
     int metoda = 0;
     int zestaw = 0;
     DaneWejsciowe daneWejsciowe;
@@ -48,7 +47,7 @@ int main() {
         cout << "Niepoprawny zestaw. Sprobuj ponownie.\n";
     }
 
-    Macierz dane = daneWejsciowe.pobierz(metoda,zestaw);
+    Macierz dane = daneWejsciowe.pobierz(metoda, zestaw);
 
     switch (metoda) {
         case 1:
@@ -60,17 +59,13 @@ int main() {
             return 0;
         case 3:
             cout << "Metoda 3";
+            gaussWierszowy(dane);
             return 0;
         case 4:
             cout << "Metoda 4";
             return 0;
-
-
-
-
     }
     daneWejsciowe.pokaz(metoda, zestaw);
-
 
 
     return 0;

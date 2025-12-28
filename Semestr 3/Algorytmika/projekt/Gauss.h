@@ -9,4 +9,6 @@ bool gaussPodstawowy(Macierz& macierz);
 
 bool gaussKolumnowy(Macierz& macierz);
 
+bool gaussWierszowy(Macierz& macierz);
+
 #endif
