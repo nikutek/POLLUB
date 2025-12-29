@@ -7,4 +7,6 @@ add_executable(projekt main.cpp
         daneWejsciowe.cpp
         DaneWejsciowe.h
         Gauss.cpp
-        Gauss.h)
+        Gauss.h
+        GaussHelpers.cpp
+        GaussHelpers.h)

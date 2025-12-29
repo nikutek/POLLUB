@@ -80,12 +80,15 @@ void DaneWejsciowe::pokaz(int metoda, int zestaw) {
 }
 
 void DaneWejsciowe::pokaz(const Macierz& macierz) {
-    for (size_t i = 0; i < macierz.size(); i++) {
-        for (size_t j = 0; j < macierz[i].size() - 1; j++) {
-            cout << macierz[i][j] << " ";
+    cout << "-------------------------\n";
+    for (const auto& wiersz : macierz) {
+        for (size_t j = 0; j < wiersz.size() - 1; j++) {
+            cout << wiersz[j] << " ";
         }
-        cout << "| " << macierz[i].back() << endl;
+        cout << "| " << wiersz.back() << endl;
     }
+    cout << "-------------------------\n";
 }
+
 
 

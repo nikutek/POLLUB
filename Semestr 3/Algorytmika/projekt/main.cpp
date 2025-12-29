@@ -63,10 +63,9 @@ int main() {
             return 0;
         case 4:
             cout << "Metoda 4";
+            gaussPelny(dane);
             return 0;
     }
     daneWejsciowe.pokaz(metoda, zestaw);
-
-
     return 0;
 }
