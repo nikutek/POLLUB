@@ -48,7 +48,7 @@ static const vector<vector<Macierz>> DANE = {
             }
     },
 
-    // METODA 4 – pełny wybór (działa zawsze)
+    // METODA 4
     {
             {
                 { 1, 2, 3, 6},
