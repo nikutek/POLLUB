@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D54074D-C758-1F85-BEEE-1F53E06723C3" name="address">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:36:29 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_address" id="99875652-362E-1788-F325-68A9DA19641F">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:51:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_country" id="E2BB04B8-8E7D-B2DE-A6FA-1C7559DB41B2">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:57:43 UTC</createdTime>
+<generatorID>EF83B12E-E0ED-26BA-A10A-B3AFD97263EF</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>B8AC2439-C40B-4CDC-8735-8277F57D7D14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="F45AAF10-66EF-36F9-7D03-B74EC3D7E915">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:02:52 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postal_code" id="68125344-2325-0A6F-5688-1D982B1AEE28">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:04:48 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street" id="F7EF1A4D-19C4-C5E4-EA80-DD19B4BAE87D">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:09:32 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_number" id="0D30EBF8-24D7-D63D-A108-AA14B5021860">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:11:24 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apartment_number" id="DC38D208-27CF-9D23-D6A8-93CCE3C3B05E">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:12:34 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6FB91F85-8E2D-D84A-8816-C506DDE8FB02" name="country">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:53:02 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_country" id="B8AC2439-C40B-4CDC-8735-8277F57D7D14">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:53:14 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country_code" id="904B6CFE-8532-C66A-5610-02AE14E58995">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:53:53 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="EC9CE22D-280A-FD37-689C-5490C3ADC78C">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:54:52 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C2558851-810A-55A0-CAB2-F46873E7E963" name="country PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 17:53:20 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B8AC2439-C40B-4CDC-8735-8277F57D7D14</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="55DDEA79-69CE-48D9-6446-165BDC3E614C" name="UQ_country_code">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:54:23 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>904B6CFE-8532-C66A-5610-02AE14E58995</newElementsIDs>
+<usedAttributes>
+<attributeRef>904B6CFE-8532-C66A-5610-02AE14E58995</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C02D6857-F403-3F3C-0B40-C7E65E7167B3" name="UQ_country_name">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:55:06 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>EC9CE22D-280A-FD37-689C-5490C3ADC78C</newElementsIDs>
+<usedAttributes>
+<attributeRef>EC9CE22D-280A-FD37-689C-5490C3ADC78C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

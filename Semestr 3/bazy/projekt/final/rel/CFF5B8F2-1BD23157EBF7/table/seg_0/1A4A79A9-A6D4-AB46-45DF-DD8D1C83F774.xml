@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A4A79A9-A6D4-AB46-45DF-DD8D1C83F774" name="husbandry_manager">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>2FF50A97-3C15-7880-FF48-DB800142E089</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_husbandry_manager" id="C82732BA-BD62-FFC5-B0BF-FE7CB5C33ACA">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>8CEE7105-8367-3A75-870D-EB6DBA127011</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="name" id="C32EA05C-B463-6030-214A-5E119ED2CBE8">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>4BA045C5-386E-28D2-4C3A-2CF7F67BF304</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="592F7FF8-3736-6353-27CB-DA354CDBA901">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>C83A133F-1573-E6E3-EA0E-C0D8A9E48B7A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pesel" id="3A25712B-D14B-9FFB-F7C5-80E4C7847AC8">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>B5537C81-A6BA-C03D-B9AF-3C40052CADCB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>8CA0F99C-C20D-1260-829F-E2C47FC02937</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="009F94AA-1842-920A-0F03-D0B74DFE5266">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>ED973601-9DB9-406A-D0B8-7175699AF771</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telephone_number" id="5E2B2FC9-E2D8-0790-0813-153CDF4E343C">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>8CB3B325-9188-77C8-0923-94F207A47C56</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="husbandry_id_husbandry" id="9A6E47ED-705E-CEDB-46EC-30D034F68B56">
+<createdBy>HP</createdBy>
+<createdTime>2026-01-07 12:38:06 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F339BED-319D-670D-8029-78D75AB01743" referredColumn="BA97741B-F621-B5C0-85BA-5C876F153E09"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B4CABE9-1C5A-A437-29D8-ABE107299E7B" name="PK_husbandry_manager">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>79AC16BB-8E70-4A6D-F3BA-792F56A69368</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C82732BA-BD62-FFC5-B0BF-FE7CB5C33ACA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D33966E3-287F-1D5E-67BC-4A41EF13BAC5" name="husbandry_manager_pesel_UN">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>467DCBD1-40A7-B6DA-8654-2C260ECCE0AD</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A25712B-D14B-9FFB-F7C5-80E4C7847AC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4D27A4A-8850-74D5-CEFE-EBEA0F040619" name="husbandry_manager_email_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>C8DE923D-A725-11E9-FE0A-533A389B3281</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="009F94AA-1842-920A-0F03-D0B74DFE5266"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E5C4C11-7413-9377-D17F-4D019D7AE6C6" name="husbandry_manager_telephone_number_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>8B4D6F60-4DE4-7395-F014-793EB1F8713A</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E2B2FC9-E2D8-0790-0813-153CDF4E343C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D16A297B-949A-BD27-D5F6-68B706A8AE08" name="husbandry_manager_husbandry_FK">
+<createdBy>HP</createdBy>
+<createdTime>2026-01-07 12:38:06 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A6E47ED-705E-CEDB-46EC-30D034F68B56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

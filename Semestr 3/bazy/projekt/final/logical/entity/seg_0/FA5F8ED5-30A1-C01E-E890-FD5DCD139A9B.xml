@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA5F8ED5-30A1-C01E-E890-FD5DCD139A9B" name="vet">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:02:57 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vet" id="BD8E5C43-2199-CA7D-4E54-F51B71BE6578">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:03:26 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="BA3C835E-8363-25D1-AC0B-8D6EA1623969">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:03:55 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="7BAF3294-E905-AC7E-E30F-469D656C74BE">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:04:10 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_licence" id="952489CB-6F75-F66B-9CE8-142C14BDC8DA">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:05:52 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pesel" id="54D4BC19-C1B9-577D-07B4-3E005808D2C8">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:08:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="647C5EB7-3FAC-99A4-BEDC-649413267DED">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:08:47 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telephone_number" id="2AF125EB-DC1D-1C6A-583C-C343E10A4B3D">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:09:00 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77FED515-FCE2-F6F6-AF59-6F29E1F7319B" name="vet PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:04:28 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD8E5C43-2199-CA7D-4E54-F51B71BE6578</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="26578AE9-E33C-8D96-6D5A-F40906BC9520" name="UQ_vet_licence">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:07:51 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>952489CB-6F75-F66B-9CE8-142C14BDC8DA</newElementsIDs>
+<usedAttributes>
+<attributeRef>952489CB-6F75-F66B-9CE8-142C14BDC8DA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2B250E6E-78B5-48CB-F293-7E93214E1C11" name="UQ_pesel">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:08:14 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>54D4BC19-C1B9-577D-07B4-3E005808D2C8</newElementsIDs>
+<usedAttributes>
+<attributeRef>54D4BC19-C1B9-577D-07B4-3E005808D2C8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="288BE5F1-21A4-D93B-EC85-6575E9CBA7A3" name="UQ_email">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:10:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>647C5EB7-3FAC-99A4-BEDC-649413267DED</newElementsIDs>
+<usedAttributes>
+<attributeRef>647C5EB7-3FAC-99A4-BEDC-649413267DED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

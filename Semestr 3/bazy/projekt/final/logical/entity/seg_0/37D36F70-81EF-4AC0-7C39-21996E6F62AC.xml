@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="37D36F70-81EF-4AC0-7C39-21996E6F62AC" name="productivity">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:56:47 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_productivity" id="83B13013-F8F5-A822-D2D7-5DEEFFDFC515">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:57:09 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="FB2CC6AB-5DAF-BD09-9EA7-8CB23CFE6B70">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:57:32 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_product" id="6E290B2E-4953-4410-5AEF-53FB9880DBBC">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:58:25 UTC</createdTime>
+<generatorID>5D13E28E-C122-8439-53B5-92F35AB70D3A</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>76239337-BCF7-0CD1-25C3-7FA59F86C2AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_animal" id="40FAC967-5B59-1196-7DF3-A199F774BA3A">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:58:43 UTC</createdTime>
+<generatorID>9302BDB9-64DE-26A6-2264-3CCF66594538</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>2DB71C9D-2FB9-0623-06A7-157E369460E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EACFD8CF-5419-AC10-C727-40220E90FB38" name="productivity PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 15:57:28 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83B13013-F8F5-A822-D2D7-5DEEFFDFC515</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

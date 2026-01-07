@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA2BC3E3-4754-C7B6-4DDF-5CD6BF1CC7DE" name="animal">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>505FDB9B-A362-3695-18A1-146DD543CF6A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_animal" id="85339047-56A3-030D-7509-6BEA942DF3C2">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>696F0F7D-701A-B5DA-7126-02994F5962E3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="id_type" id="1DAF1A2A-C557-1FF9-EEBC-D10618DE5AAF">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>F46C792D-86C2-A827-7907-F1B12F86A2A3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>36706BDD-CF92-801E-2934-2862AB87BDE3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="husbandry_id_husbandry" id="24084E00-4735-2D18-3EE0-25A1E62FA26D">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>02B542EE-4769-14AB-1A5B-9C1B1B63C07C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3150FCDF-5BBD-A68B-5435-8A593D2A5B4B" referredColumn="BA97741B-F621-B5C0-85BA-5C876F153E09"/>
+</associations>
+</Column>
+<Column name="birth_date" id="74707CB6-4F02-EF80-33F5-68E0F4E146F5">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>7147C88C-82D3-EDA8-286E-D3F5290D472C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>03E7EDF5-3F1A-DFBF-B24B-9EAF0A0C4B1F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="death_date" id="27D4506B-2742-EEEA-A34D-6F9CF10F2C5A">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>2DE15FEE-BD4C-85D9-5665-6DD51EF19777</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>03E7EDF5-3F1A-DFBF-B24B-9EAF0A0C4B1F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="breed_id_breed" id="F615E68A-EF9F-C6B9-1EB9-852EA4310A11">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>AEF54AC7-9D5E-4D8A-08C2-04FE140915D2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BF8B1AE-D36F-C052-E4FB-08136CAEE47F" referredColumn="0E4E273A-64E0-2BCC-69B7-B27E931E0426"/>
+</associations>
+</Column>
+<Column name="animal_id_animal1" id="EA6F8D52-7465-8CED-5C6F-0910B77B02D9">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>8F7D01E3-3C22-8DE8-2FA9-D3CB95505560</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F482149-5CDB-8197-E75F-98A50A983E4F" referredColumn="85339047-56A3-030D-7509-6BEA942DF3C2"/>
+</associations>
+</Column>
+<Column name="animal_id_animal" id="6D67B4FF-7525-6C0E-75D7-8F758DF289E5">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>074A08DC-863A-1FCB-856D-B5308232B42A</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94C9CB68-FCBB-9E13-7676-614B8039A094" referredColumn="85339047-56A3-030D-7509-6BEA942DF3C2"/>
+</associations>
+</Column>
+<Column name="animal_number" id="3648B25C-A29A-1A05-CED0-A5DA4A32665D">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>2D45798E-7187-314B-208E-288E3F7F3E24</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EA6DD8B-640F-FB5D-8484-1D8409C4B06F" name="Zwierze_PK">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>FEB47707-3230-7A09-4A5E-E456008CD2C9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85339047-56A3-030D-7509-6BEA942DF3C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4947A8E-583A-167A-6FB6-A9687ABAA8AA" name="animal_animal_number_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>889ACD90-4916-9DBC-3BF7-A261BA3A8729</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3648B25C-A29A-1A05-CED0-A5DA4A32665D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CAFB537-7173-F517-0AB9-A264E096367A" name="animal_breed_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F615E68A-EF9F-C6B9-1EB9-852EA4310A11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EEBD733-C6DB-92EB-FEDB-04816268CF89" name="animal_husbandry_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24084E00-4735-2D18-3EE0-25A1E62FA26D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE7BADDE-2616-FF45-4AD0-0BB175E4CBEE" name="animal_animal_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>A10D3098-BE1A-8D26-054D-97317CE95210</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D67B4FF-7525-6C0E-75D7-8F758DF289E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72CC6714-0E82-A07C-0A29-ABB346A6638B" name="animal_animal_FKv1">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>7FF29197-53E3-A0AC-5579-4C45C8665829</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA6F8D52-7465-8CED-5C6F-0910B77B02D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

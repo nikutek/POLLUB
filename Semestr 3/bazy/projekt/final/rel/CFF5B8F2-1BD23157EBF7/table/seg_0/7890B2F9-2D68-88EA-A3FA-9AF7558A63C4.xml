@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7890B2F9-2D68-88EA-A3FA-9AF7558A63C4" name="country">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>6FB91F85-8E2D-D84A-8816-C506DDE8FB02</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_country" id="2EE38A8F-BCA6-B5BB-81D9-FA07210297E9">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>B8AC2439-C40B-4CDC-8735-8277F57D7D14</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_code" id="B7D3C1F0-33B1-A96E-0E89-B36859304AE5">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>904B6CFE-8532-C66A-5610-02AE14E58995</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="ADA402A1-6D1D-CD8F-C734-ACDDB4D1C375">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>EC9CE22D-280A-FD37-689C-5490C3ADC78C</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01ADD63E-9988-4FBB-D849-8A039239C1CC" name="country_PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>C2558851-810A-55A0-CAB2-F46873E7E963</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EE38A8F-BCA6-B5BB-81D9-FA07210297E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2230CF03-9EBA-CFFA-6A17-DA749724C65D" name="country_country_code_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>55DDEA79-69CE-48D9-6446-165BDC3E614C</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7D3C1F0-33B1-A96E-0E89-B36859304AE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11652EB5-A3EB-1152-C349-2CCBDCFB29D5" name="country_name_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>C02D6857-F403-3F3C-0B40-C7E65E7167B3</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADA402A1-6D1D-CD8F-C734-ACDDB4D1C375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

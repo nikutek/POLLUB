@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2512D9CF-1D6A-0A6B-AEA4-3D5DC0787FB6" name="breeder">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>13E9C4FB-EA16-17E6-C19C-95273BD952A4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_breeder" id="CD2D5541-1A45-FED4-97AB-1670B3D1967C">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>766F4CF4-E530-8162-C271-9C6688B362E0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="name" id="F5225AF6-7AC5-02B2-CBF1-8481BF04497C">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>0EF2C70D-24FE-A8C2-C3F4-1938B3B5279D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="292373EF-5007-842F-DC3D-88AFFA125046">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>C78CB804-CA53-375A-A3F8-65E12F936172</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pesel" id="F444F152-4E3E-7FFC-7839-1148886F9486">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>253EF6F5-68A3-A0AF-7043-9A7230592F54</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>8CA0F99C-C20D-1260-829F-E2C47FC02937</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telephone_number" id="FC9AEFB9-67CE-A670-D2E3-7B1E77E0BC07">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>33E075DF-37A2-30DF-F053-2FDED20D56A1</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="739D0E4F-F717-2BAD-3D68-C83AF41CC148" name="Breeder_PK">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>EDEFFB06-43F1-FF81-2714-F53103C128CE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD2D5541-1A45-FED4-97AB-1670B3D1967C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B50B227-6181-61E8-BFD9-1C30AF3E9199" name="breeder_pesel_UN">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>72623BB9-18B7-711B-5995-B129A1255D0B</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F444F152-4E3E-7FFC-7839-1148886F9486"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F11D524-448A-5F0E-DFF9-34DB9FD6B0F7" name="breeder_telephone_number_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>F063A2E5-1CDD-DD17-6ABD-2AA780252C11</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC9AEFB9-67CE-A670-D2E3-7B1E77E0BC07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

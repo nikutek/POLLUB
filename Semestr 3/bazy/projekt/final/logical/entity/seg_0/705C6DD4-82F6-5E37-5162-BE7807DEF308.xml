@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="705C6DD4-82F6-5E37-5162-BE7807DEF308" name="event_type">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>0C2109D5-D3B2-CCC5-011A-33A5DFE37D61</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_event_type" id="D79DA2A8-5E09-2374-D8FB-BB505FA3B694">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>080C8940-97A8-B4A3-1422-20F92CD1C214</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5D00D712-8477-492B-501A-4688DC33B550">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>C37DA6D0-DC5E-AF3C-6301-00C04306F1BC</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="7F7CACC2-FB96-B33E-516B-64EF2E60FDCD">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>53EEEEE1-A9FA-1D0E-E3C2-AD2EA6EFF6E5</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="987E0131-637B-9B8C-D986-42AADC908F12" name="PK_event_type">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>5BEC8234-92EA-DA1C-8D6F-F9C0D700EBE3</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>D79DA2A8-5E09-2374-D8FB-BB505FA3B694</newElementsIDs>
+<usedAttributes>
+<attributeRef>D79DA2A8-5E09-2374-D8FB-BB505FA3B694</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="214C50A3-4087-7323-B46B-1936EB0C5482" name="UQ_event_type_name">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:57:55 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>5D00D712-8477-492B-501A-4688DC33B550</newElementsIDs>
+<usedAttributes>
+<attributeRef>5D00D712-8477-492B-501A-4688DC33B550</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

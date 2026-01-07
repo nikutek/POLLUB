@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CC53DD4-584D-C650-96A3-9D2FC2C5CEC4" name="event_type">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>92153256-6E69-3C2B-861F-FE137BE47907</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_event_type" id="49DB00F1-0291-0D76-412A-C557AF5896C6">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>8185D990-FF67-86E8-2FAA-7BE6E23BEB0C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="name" id="7C3DCD26-18D4-3887-11A2-464FF0C4E611">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>EB6B2FE8-3A67-B28A-8FFD-DD2CB7C40114</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B980C5A7-EFAC-C398-1540-7A1805A57109">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>EA83479C-BAD1-B80C-2288-AF4F9A2B3E31</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8823A82C-4E7C-C4A0-8EF0-3F6EA165AAC1" name="id_event_type_PK">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>B9ECAFDD-18A2-045A-3D2E-13BFBD603CC3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49DB00F1-0291-0D76-412A-C557AF5896C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5424EB94-686D-5AEC-4167-B525CC62C452" name="event_type_name_UN">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>214C50A3-4087-7323-B46B-1936EB0C5482</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C3DCD26-18D4-3887-11A2-464FF0C4E611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_zwierze_hodowla" directorySegmentName="seg_0" id="E8AC08EF-4E33-1606-3769-D2D34ADCF79B">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>1743A98E-B094-2234-04C3-9E7BB3C7DAC7</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>0C7EF639-D08D-2EB7-DB4D-63A57DE1E579</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1EFA5DD7-94B6-FD40-F594-4283D7E4F65B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5C501D27-231C-2AD2-4962-8E28177C5D5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

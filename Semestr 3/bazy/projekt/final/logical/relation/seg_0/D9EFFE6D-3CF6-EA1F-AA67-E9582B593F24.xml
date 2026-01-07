@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rasa_Typ_zwierzecia_FK" directorySegmentName="seg_0" id="D9EFFE6D-3CF6-EA1F-AA67-E9582B593F24">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>303F9A69-88D1-B555-AEE0-5FE9D472225B</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>64B08BE5-50E0-6C44-EC14-008F905E7B32</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2B98228-B61E-F31D-6403-BA6A04E6A49E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5BB81FED-9CC8-83DD-9FCB-752A0EA8EAD0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

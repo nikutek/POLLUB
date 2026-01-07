@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_zdarzenie_typ" directorySegmentName="seg_0" id="42ACC229-7880-CC5E-2537-69E50D2A5A21">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>6FE8F2BE-2670-8B94-EB78-C37F05A1C889</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>987E0131-637B-9B8C-D986-42AADC908F12</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>705C6DD4-82F6-5E37-5162-BE7807DEF308</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51FA9970-16FA-5248-0043-4734148499DC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

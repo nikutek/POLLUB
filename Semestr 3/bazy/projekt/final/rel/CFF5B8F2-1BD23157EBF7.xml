@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Hodowla_relacyjna" id="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" mainViewID="780D1586-AAC1-74C2-630B-A5805E8231A8">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:11 UTC</createdTime>
+<ownerDesignName>baza_hodowla</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

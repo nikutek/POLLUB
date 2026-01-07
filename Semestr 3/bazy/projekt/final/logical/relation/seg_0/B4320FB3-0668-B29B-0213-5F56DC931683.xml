@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_zdarzenie_zwierze" directorySegmentName="seg_0" id="B4320FB3-0668-B29B-0213-5F56DC931683">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>8E9DA94F-5090-6E5C-3685-0E6E4808962C</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>9E8E9795-AEF5-8F27-9939-108C911833F7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5C501D27-231C-2AD2-4962-8E28177C5D5F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51FA9970-16FA-5248-0043-4734148499DC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

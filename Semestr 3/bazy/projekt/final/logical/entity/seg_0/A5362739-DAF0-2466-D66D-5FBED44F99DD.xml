@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5362739-DAF0-2466-D66D-5FBED44F99DD" name="vet_treatment">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:14:43 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vet_treatment" id="7BBFA2C6-05C5-B9DB-30E2-4B58A45B8C59">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:14:51 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="A0434947-7EFD-1BF0-64BB-98C4FD84B12E">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:15:04 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="D36FF296-D7CB-7EC6-7681-923DC3CBA2C1">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:16:21 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="2F2E071B-840A-34C8-0AB1-EA4ACB385B9C">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:16:40 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_animal" id="803347B9-1632-63F3-2D47-6CE50F431A38">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:17:06 UTC</createdTime>
+<generatorID>094AEF11-D595-0499-0B22-B1B8D14AA9F8</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>2DB71C9D-2FB9-0623-06A7-157E369460E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_vet" id="7B66954E-ACE5-01C8-9490-B4C9563F7E64">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:17:15 UTC</createdTime>
+<generatorID>4E6A8144-F762-AB91-99E4-8676763B3E83</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>BD8E5C43-2199-CA7D-4E54-F51B71BE6578</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8AF33A1B-1FB9-F6B1-6CD1-916BAEBF3955" name="vet_treatment PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-28 16:15:09 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BBFA2C6-05C5-B9DB-30E2-4B58A45B8C59</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

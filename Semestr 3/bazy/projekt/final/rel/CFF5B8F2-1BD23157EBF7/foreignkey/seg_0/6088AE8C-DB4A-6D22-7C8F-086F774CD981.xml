@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6088AE8C-DB4A-6D22-7C8F-086F774CD981" containerWithKeyObject="45733CCC-9E3F-DD6F-ECCD-79027F532B04" localFKIndex="A9D65085-9C01-A42C-B8C0-922142F98025" name="event_animal_FK">
+<sourceDDLFile>baza.sql</sourceDDLFile>
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>C86F534A-4D30-DE55-9958-F18CE5E99CE4</importedID>
+<referredTableLongName>animal</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CA2BC3E3-4754-C7B6-4DDF-5CD6BF1CC7DE</referredTableID>
+<keyObject>9EA6DD8B-640F-FB5D-8484-1D8409C4B06F</keyObject>
+<referredKeyID>9EA6DD8B-640F-FB5D-8484-1D8409C4B06F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_animal</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

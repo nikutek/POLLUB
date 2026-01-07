@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Zwierze_Rasa_FK" directorySegmentName="seg_0" id="8C7AD0B0-E0FB-23F2-C5D2-0A7285685E28">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>D0FA18D9-9B67-3730-93C9-0D2748238DBA</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>ADD8B12A-807D-151F-BD1C-4728DCD9B79F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5BB81FED-9CC8-83DD-9FCB-752A0EA8EAD0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5C501D27-231C-2AD2-4962-8E28177C5D5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

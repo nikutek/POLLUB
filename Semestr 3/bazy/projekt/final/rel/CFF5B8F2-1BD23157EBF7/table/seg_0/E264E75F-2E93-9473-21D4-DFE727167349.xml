@@ -1,0 +1,241 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E264E75F-2E93-9473-21D4-DFE727167349" name="address">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>5D54074D-C758-1F85-BEEE-1F53E06723C3</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_address" id="DEB42297-172F-CBF7-90F6-E634335301FF">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>99875652-362E-1788-F325-68A9DA19641F</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_id_country" id="D0124474-4B22-0847-AC59-074E80DB63B4">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>E2BB04B8-8E7D-B2DE-A6FA-1C7559DB41B2</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B503C027-7427-7280-799C-C8088F535A12" referredColumn="2EE38A8F-BCA6-B5BB-81D9-FA07210297E9"/>
+</associations>
+</Column>
+<Column name="breeder_id_breeder" id="BD699687-3379-1841-85AE-FB1BE541ABC8">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>249CF0DD-5ED0-24B6-FF27-5FF07B6E7A64</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51958423-32E7-8BF5-05A3-6948C4CEE7FF" referredColumn="CD2D5541-1A45-FED4-97AB-1670B3D1967C"/>
+</associations>
+</Column>
+<Column name="husbandry_manager_id_husbandry_manager" id="33560C9B-018A-004B-D7F2-F726DF2533BC">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>A39F8E0B-62EB-C295-E052-5F5D1BEBCE24</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12AACF9E-C4A0-CD32-954C-A87AB6E0C4CA" referredColumn="C82732BA-BD62-FFC5-B0BF-FE7CB5C33ACA"/>
+</associations>
+</Column>
+<Column name="city" id="DC79EB84-BE02-D004-B506-CF8B525E9B78">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>F45AAF10-66EF-36F9-7D03-B74EC3D7E915</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postal_code" id="FDB238F5-7C97-CD6C-1D2F-1BC502445185">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>68125344-2325-0A6F-5688-1D982B1AEE28</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="9FAE97AE-5651-A5F5-9222-A0DA0B013F33">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>F7EF1A4D-19C4-C5E4-EA80-DD19B4BAE87D</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_number" id="E9ECB727-AE7D-37F1-F1D4-32342B051B83">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>0D30EBF8-24D7-D63D-A108-AA14B5021860</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apartment_number" id="36E7D911-DA67-7C3B-EFDC-D00FA9872336">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>DC38D208-27CF-9D23-D6A8-93CCE3C3B05E</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="husbandry_id_husbandry" id="3BCE9E3B-E944-1EB4-FF3A-3BED6BEB837B">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>848E8AA9-D053-A7C1-CD77-9476EA817A1D</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0513C2A-D457-B98A-E1B3-1080D5CED995" referredColumn="BA97741B-F621-B5C0-85BA-5C876F153E09"/>
+</associations>
+</Column>
+<Column name="system_admin_id_system_admin" id="B667D195-0212-24E5-709A-D6D406A222EB">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>F758F85F-13AC-9E0F-0353-0011531D77E8</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA557297-15D4-C38B-A9CB-FD0CE3CF1670" referredColumn="68CD22DB-6738-8224-2BE5-08FD8FDA2171"/>
+</associations>
+</Column>
+<Column name="vet_id_vet" id="9A96478A-45FC-EA5F-560D-0DDE9F5CFC41">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>DD23DDEE-C0B6-36E1-B2D7-AE3508758490</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51869815-278D-43D1-ED1C-C214C2D7D448" referredColumn="B3260616-4630-3EDE-E504-287B64B9CD9E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DBEDB51-5306-3103-5BCE-7355DCCE39AD" name="address_breeder_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>D3F93459-B3D4-8303-A834-82AB15E97050</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD699687-3379-1841-85AE-FB1BE541ABC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14CE286A-B6D9-1625-8D31-F1F4410A360F" name="address_country_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>EF83B12E-E0ED-26BA-A10A-B3AFD97263EF</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0124474-4B22-0847-AC59-074E80DB63B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32E9DEE7-4F17-F09F-702D-DF9F44EE513B" name="address_husbandry_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>CE4F40C8-D62C-9108-3BBB-38B35895CE50</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BCE9E3B-E944-1EB4-FF3A-3BED6BEB837B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7197A1E2-6329-181A-5701-371DF4AE22B9" name="address_husbandry_manager_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>4806DB11-A9D8-BB0C-21EA-F8CCC66B2469</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33560C9B-018A-004B-D7F2-F726DF2533BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA16A143-F898-A479-FF49-7A3027C15303" name="address_system_admin_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>A45447A7-EB27-2F20-F80B-9DA389A198B5</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B667D195-0212-24E5-709A-D6D406A222EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04A3B86E-2FED-CAB0-B6F6-DD772C2450FA" name="address_vet_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>291DD38B-EFC9-405E-E7AB-3130AB82AF39</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A96478A-45FC-EA5F-560D-0DDE9F5CFC41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

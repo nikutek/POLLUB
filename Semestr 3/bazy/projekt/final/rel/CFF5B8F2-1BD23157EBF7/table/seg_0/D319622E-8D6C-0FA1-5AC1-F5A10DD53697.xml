@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D319622E-8D6C-0FA1-5AC1-F5A10DD53697" name="vet_treatment">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:52 UTC</createdTime>
+<generatorID>A5362739-DAF0-2466-D66D-5FBED44F99DD</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vet_treatment" id="E3833C9F-7D44-7DAA-956A-727661B91375">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>7BBFA2C6-05C5-B9DB-30E2-4B58A45B8C59</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="F03EC057-A212-9753-8540-D0F015BDCCB6">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>A0434947-7EFD-1BF0-64BB-98C4FD84B12E</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="76818CE4-A159-F404-1F31-7115C1CA4797">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>D36FF296-D7CB-7EC6-7681-923DC3CBA2C1</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="E8FFB4BF-CB90-F1DB-2F74-18398C2CA2A1">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>2F2E071B-840A-34C8-0AB1-EA4ACB385B9C</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animal_id_animal" id="AED216DE-42AA-5AD5-EC8B-D6514E577DB5">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>803347B9-1632-63F3-2D47-6CE50F431A38</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35A8CF6B-49CF-928D-2CF2-644AD05054C1" referredColumn="85339047-56A3-030D-7509-6BEA942DF3C2"/>
+</associations>
+</Column>
+<Column name="vet_id_vet" id="DA149426-235F-A754-2DAD-382A78AD0B34">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>7B66954E-ACE5-01C8-9490-B4C9563F7E64</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4FBD23F-9BE7-CBCB-A89C-67DD9BED929D" referredColumn="B3260616-4630-3EDE-E504-287B64B9CD9E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F10BAB54-FE32-5435-B15B-A7E69F6CD4BC" name="vet_treatment_PK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>8AF33A1B-1FB9-F6B1-6CD1-916BAEBF3955</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3833C9F-7D44-7DAA-956A-727661B91375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79FDCEE7-20C9-6FE7-F3BD-318773F0119F" name="vet_treatment_animal_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>094AEF11-D595-0499-0B22-B1B8D14AA9F8</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AED216DE-42AA-5AD5-EC8B-D6514E577DB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0F0C4F0-28F6-00F8-9C70-D3CDB04683B1" name="vet_treatment_vet_FK">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-29 19:30:53 UTC</createdTime>
+<generatorID>4E6A8144-F762-AB91-99E4-8676763B3E83</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA149426-235F-A754-2DAD-382A78AD0B34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

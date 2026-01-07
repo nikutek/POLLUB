@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="breeder_husbandry" directorySegmentName="seg_0" id="D2302DBA-1308-628C-F56F-4B2E06ADAB86">
+<createdBy>HP</createdBy>
+<createdTime>2026-01-07 12:51:04 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<sourcePk>9A90B9ED-E1A5-75FE-7125-B3D432443E3C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>049ED73A-33B9-5161-24FA-3C32306C4B41</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1EFA5DD7-94B6-FD40-F594-4283D7E4F65B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

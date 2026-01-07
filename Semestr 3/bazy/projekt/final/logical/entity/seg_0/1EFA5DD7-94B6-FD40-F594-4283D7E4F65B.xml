@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EFA5DD7-94B6-FD40-F594-4283D7E4F65B" name="husbandry">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>57438596-2F4C-1E86-CDA8-FA1E2D3D5FD5</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_husbandry" id="5588D979-2BDD-CBD1-F282-FDCE308A0EA3">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>09F1C92E-9EE1-EF0F-C689-43E40077C5E7</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_husbandry_manager" id="58ED4AAA-FE83-6385-E325-141871DB1AC9">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<generatorID>BEC8D0EF-F7A0-065D-446C-E57DA2BCAC2F</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<importedID>6253D9E1-F324-D745-5739-8919C22CCD2E</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C4CF9452-5585-0F2F-87AB-23628973A822</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="husbandry_number" id="4D3AFB84-E23C-F36A-8CF7-672A31F769EC">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>0B65F16F-DC83-A64B-C9D1-3722AF226345</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number_of_animals" id="C2070FC3-36A9-C152-25B4-AE52772CCC7F">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>855AE738-F720-8408-EB46-A5E188C9FE8F</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_at" id="F778C0EF-A541-03BB-0B02-993306BB3C1A">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>8F721A77-A395-A76F-CB89-B58DFADC5DBF</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_husbandry_type" id="38A48724-798E-BB90-5719-FBEE15694B10">
+<createdBy>HP</createdBy>
+<createdTime>2025-12-11 18:28:41 UTC</createdTime>
+<generatorID>8487823D-5EFF-1A24-F30B-F8D46EADF30E</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>D3EB6403-19EF-BE83-C865-72AE35E27FC0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_breeder" id="341F7170-1655-375E-4058-E8A5213A6845">
+<createdBy>HP</createdBy>
+<createdTime>2026-01-07 12:51:04 UTC</createdTime>
+<generatorID>D2302DBA-1308-628C-F56F-4B2E06ADAB86</generatorID>
+<ownerDesignName>final</ownerDesignName>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<referedAttribute>CE952434-9E5E-D94B-7C4E-A4755633189B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C7EF639-D08D-2EB7-DB4D-63A57DE1E579" name="PK_husbandry">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>9F7B9025-C318-4EA7-D2A5-AF875CFAE6F3</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5588D979-2BDD-CBD1-F282-FDCE308A0EA3</newElementsIDs>
+<usedAttributes>
+<attributeRef>5588D979-2BDD-CBD1-F282-FDCE308A0EA3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="430C3BBE-15B6-1283-29C4-E63FD200470E" name="UQ_husbandry_number">
+<createdBy>HP</createdBy>
+<createdTime>2025-10-28 12:47:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<importedID>86C6A350-7E33-BEDC-2546-B735DF83FFBF</importedID>
+<engineerTo>
+<item key="CFF5B8F2-66F5-865F-E9AB-1BD23157EBF7" value="true"/>
+</engineerTo>
+<newElementsIDs>4D3AFB84-E23C-F36A-8CF7-672A31F769EC</newElementsIDs>
+<usedAttributes>
+<attributeRef>4D3AFB84-E23C-F36A-8CF7-672A31F769EC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
