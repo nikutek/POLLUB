@@ -4,6 +4,29 @@
 
 using namespace std;
 
+Macierz wczytajMacierzOdUzytkownika() {
+    int n;
+    cout << "\nPodaj liczbe niewiadomych (n): ";
+    cin >> n;
+
+    Macierz macierz(n, vector<double>(n + 1));
+
+    cout << "\nPodaj elementy macierzy rozszerzonej (wierszami):\n";
+
+
+    for (int i = 0; i < n; i++) {
+        cout << "Wiersz " << i + 1 << ": ";
+        for (int j = 0; j <= n; j++) {
+            cin >> macierz[i][j];
+        }
+    }
+
+    cout << "\nWprowadzona macierz:\n";
+    DaneWejsciowe::pokaz(macierz);
+
+    return macierz;
+}
+
 int main() {
     int metoda = 0;
     int zestaw = 0;
@@ -28,26 +51,47 @@ int main() {
         cout << "Niepoprawna metoda. Sprobuj ponownie.\n\n";
     }
 
-    cout << "\nDostepne zestawy danych dla metody " << metoda << ":\n\n";
+    int wyborDanych = 0;
 
-    cout << "ZESTAW 1:\n";
-    daneWejsciowe.pokaz(metoda, 1);
+    cout << "\nWybierz zrodlo danych:\n";
+    cout << "1. Gotowe zestawy\n";
+    cout << "2. Wlasne dane\n";
+    cout << "Twoj wybor: ";
+    cin >> wyborDanych;
 
-    cout << "\nZESTAW 2:\n";
-    daneWejsciowe.pokaz(metoda, 2);
+    Macierz dane;
 
-    while (true) {
-        cout << "\nWybierz zestaw (1 lub 2): ";
-        cin >> zestaw;
+    if (wyborDanych == 1) {
 
-        if (zestaw == 1 || zestaw == 2) {
-            break;
+        cout << "\nDostepne zestawy danych dla metody "
+             << metoda << ":\n\n";
+
+        cout << "ZESTAW 1:\n";
+        daneWejsciowe.pokaz(metoda, 1);
+
+        cout << "\nZESTAW 2:\n";
+        daneWejsciowe.pokaz(metoda, 2);
+
+        while (true) {
+            cout << "\nWybierz zestaw (1 lub 2): ";
+            cin >> zestaw;
+
+            if (zestaw == 1 || zestaw == 2) break;
+            cout << "Niepoprawny zestaw. Sprobuj ponownie.\n";
         }
 
-        cout << "Niepoprawny zestaw. Sprobuj ponownie.\n";
-    }
+        dane = daneWejsciowe.pobierz(metoda, zestaw);
 
-    Macierz dane = daneWejsciowe.pobierz(metoda, zestaw);
+    }
+    else if (wyborDanych == 2) {
+
+        dane = wczytajMacierzOdUzytkownika();
+
+    }
+    else {
+        cout << "Niepoprawny wybor. Koniec programu.\n";
+        return 0;
+    }
 
     switch (metoda) {
         case 1:

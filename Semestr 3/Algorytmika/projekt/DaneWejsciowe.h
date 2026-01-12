@@ -7,4 +7,6 @@ public:
     static void pokaz(int metoda, int zestaw);
 
     static void pokaz(const Macierz& macierz);
+
+    static Macierz wczytajMacierzOdUzytkownika();
 };
