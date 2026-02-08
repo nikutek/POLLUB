@@ -8,9 +8,13 @@ import random
 DATA_DIR = "data"
 TRAIN_DIR = "train"
 VAL_DIR = "val"
+TEST_DIR = "test"
 
-TRAIN_RATIO = 0.8  # 80% train, 20% val
-SEED = 42          # dla powtarzalności
+TRAIN_RATIO = 0.7   # 70% train
+VAL_RATIO = 0.15    # 15% val
+TEST_RATIO = 0.15   # 15% test
+
+SEED = 42
 
 IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
 
@@ -19,7 +23,6 @@ IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
 # ==========================
 
 def clear_directory(path):
-    """Usuwa wszystkie pliki i foldery w danym katalogu."""
     if not os.path.exists(path):
         return
     for item in os.listdir(path):
@@ -30,7 +33,6 @@ def clear_directory(path):
             os.remove(item_path)
 
 def get_images(folder):
-    """Zwraca listę ścieżek do obrazów w folderze."""
     return [
         os.path.join(folder, f)
         for f in os.listdir(folder)
@@ -44,14 +46,11 @@ def get_images(folder):
 def split_dataset():
     random.seed(SEED)
 
-    # Wyczyść train i val
-    clear_directory(TRAIN_DIR)
-    clear_directory(VAL_DIR)
+    # Wyczyść katalogi
+    for d in [TRAIN_DIR, VAL_DIR, TEST_DIR]:
+        clear_directory(d)
+        os.makedirs(d, exist_ok=True)
 
-    os.makedirs(TRAIN_DIR, exist_ok=True)
-    os.makedirs(VAL_DIR, exist_ok=True)
-
-    # Każdy folder w data = osobna klasa
     classes = [
         d for d in os.listdir(DATA_DIR)
         if os.path.isdir(os.path.join(DATA_DIR, d))
@@ -64,34 +63,39 @@ def split_dataset():
         class_path = os.path.join(DATA_DIR, cls)
         images = get_images(class_path)
 
-        if len(images) == 0:
-            print(f"[WARN] Brak obrazów w klasie: {cls}")
+        if len(images) < 3:
+            print(f"[WARN] Za mało obrazów w klasie: {cls}")
             continue
 
         random.shuffle(images)
 
-        split_idx = int(len(images) * TRAIN_RATIO)
-        train_images = images[:split_idx]
-        val_images = images[split_idx:]
+        n = len(images)
+        n_train = int(n * TRAIN_RATIO)
+        n_val = int(n * VAL_RATIO)
 
-        train_class_dir = os.path.join(TRAIN_DIR, cls)
-        val_class_dir = os.path.join(VAL_DIR, cls)
+        train_imgs = images[:n_train]
+        val_imgs = images[n_train:n_train + n_val]
+        test_imgs = images[n_train + n_val:]
 
-        os.makedirs(train_class_dir, exist_ok=True)
-        os.makedirs(val_class_dir, exist_ok=True)
+        for split_name, split_imgs in [
+            ("train", train_imgs),
+            ("val", val_imgs),
+            ("test", test_imgs)
+        ]:
+            split_dir = os.path.join(split_name, cls)
+            os.makedirs(split_dir, exist_ok=True)
 
-        for img in train_images:
-            shutil.copy2(img, train_class_dir)
-
-        for img in val_images:
-            shutil.copy2(img, val_class_dir)
+            for img in split_imgs:
+                shutil.copy2(img, split_dir)
 
         print(
             f"[OK] {cls}: "
-            f"{len(train_images)} train / {len(val_images)} val"
+            f"{len(train_imgs)} train / "
+            f"{len(val_imgs)} val / "
+            f"{len(test_imgs)} test"
         )
 
-    print("\n✅ Podział datasetu zakończony.")
+    print("\n✅ Podział datasetu (train/val/test) zakończony.")
 
 # ==========================
 # ENTRY POINT

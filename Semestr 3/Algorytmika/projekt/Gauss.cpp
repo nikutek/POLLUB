@@ -20,7 +20,7 @@ bool gaussPodstawowy(Macierz &macierz) {
         eliminujKolumne(macierz, k);
 
         cout << "\nPo eliminacji kolumny "
-                << k + 1 << " (metoda podstawowa):\n";
+                << k + 1 << ":\n";
         DaneWejsciowe::pokaz(macierz);
     }
 
