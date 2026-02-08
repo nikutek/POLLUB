@@ -1,1 +1,84 @@
-"ATLAS/Aerial Landscape Detection/data.zip" 
+############################
+# 🔥 GLOBAL - LARGE FILES
+############################
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+datasets/
+data/
+models/
+checkpoints/
+weights/
+
+############################
+# 🐍 PYTHON
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+*.pickle
+*.joblib
+
+venv/
+.env/
+.venv/
+
+############################
+# 🧠 ML / IMAGE RECOGNITION
+############################
+runs/
+logs/
+wandb/
+tensorboard/
+*.tfevents
+
+############################
+# ☕ JAVA
+############################
+target/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+############################
+# ⚙️ C / C++
+############################
+*.o
+*.obj
+*.exe
+*.out
+*.app
+build/
+cmake-build*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+############################
+# 🧾 IDE
+############################
+.vscode/
+.idea/
+*.iml
+
+############################
+# 🪟 WINDOWS
+############################
+Thumbs.db
+Desktop.ini
+
+############################
+# 🍎 MAC (na przyszłość)
+############################
+.DS_Store
