@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kreator pizzy</title>
+    <link rel="stylesheet" href="CSS/formularz.css" />
+  </head>
+
+  <body>
+    <h1>Kreator pizzy</h1>
+
+    <form>
+      <fieldset>
+        <legend>Rozmiar:</legend>
+
+        <label>
+          <input type="radio" name="rozmiar" value="mala" />
+          Mała
+        </label>
+
+        <label>
+          <input type="radio" name="rozmiar" value="srednia" checked />
+          Średnia
+        </label>
+
+        <label>
+          <input type="radio" name="rozmiar" value="duza" />
+          Duża
+        </label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Dodatki:</legend>
+
+        <label
+          ><input type="checkbox" name="dodatki" value="szynka" /> Szynka</label
+        ><br />
+        <label
+          ><input type="checkbox" name="dodatki" value="salami" checked />
+          Salami</label
+        ><br />
+        <label
+          ><input type="checkbox" name="dodatki" value="boczek" /> Boczek</label
+        ><br />
+        <label
+          ><input type="checkbox" name="dodatki" value="papryka" checked />
+          Papryka</label
+        ><br />
+        <label
+          ><input type="checkbox" name="dodatki" value="pomidor" checked />
+          Pomidor</label
+        ><br />
+        <label><input type="checkbox" name="dodatki" value="ser" /> Ser</label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Sosy:</legend>
+
+        <label for="sos">Wybierz sos:</label><br />
+
+        <select name="sos" id="sos" size="4">
+          <option>Pomidorowy</option>
+          <option>Czosnkowy</option>
+          <option>Ketchup łagodny</option>
+          <option selected>Ketchup pikantny</option>
+        </select>
+
+        <br /><br />
+
+        <label for="uwagi">Inne uwagi:</label><br />
+        <textarea id="uwagi" name="uwagi" rows="4" cols="50"></textarea>
+      </fieldset>
+
+      <br />
+
+      <input type="reset" value="Wyczyść dane" />
+      <input type="submit" value="Wyślij zamówienie" />
+    </form>
+  </body>
+</html>
